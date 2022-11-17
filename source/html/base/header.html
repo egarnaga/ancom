@@ -1,7 +1,8 @@
-<header class="header @@if (context.mod) { header--@@mod }">
+<header class="header container @@if (context.mod) { header--@@mod }">
   <div class="header__wrapper">
     <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      Логотип
+      <!-- 1x: 67px; 2x: 134px -->
+      <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x" width="67" height="42" alt="Логотип">
     </a>
 
     <nav class="main-nav">
@@ -13,16 +14,41 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Каталог</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Где купить</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#" }>О компании</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 4) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 4) { href="#" }>HoReCa</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 5) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 5) { href="#" }>Франшиза</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 6) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 6) { href="#" }>Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 7) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 7) { href="#" }>Контакты</a>
           </li>
         </ul>
+
+        <button class="main-nav__button">
+          <nobr>
+            <span>Санкт-Петербург</span>
+            <svg width="12" height="6">
+              <use xlink:href="#icon-arrow-down"></use>
+            </svg>
+          </nobr>
+        </button>
       </div>
     </nav>
+
   </div>
 </header>
