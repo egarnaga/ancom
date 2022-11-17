@@ -45,7 +45,7 @@
       <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x" width="67" height="42" alt="Логотип">
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
         <svg width="20" height="20">
           <use xlink:href="#icon-burger"></use>
@@ -79,14 +79,32 @@
           </li>
         </ul>
 
-        <button class="main-nav__button">
-          <nobr>
-            <span>Санкт-Петербург</span>
-            <svg width="12" height="6">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </nobr>
-        </button>
+        <div class="main-nav__buttons-wrap">
+          <button class="main-nav__city-button main-nav__city-button--closed">
+            <nobr>
+              <span>Санкт-Петербург</span>
+              <svg width="12" height="6">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </nobr>
+          </button>
+
+          <div class="main-nav__buttons-list main-nav__buttons-list--closed">
+            <button class="main-nav__button-item main-nav__button-item--active">
+              <span>Санкт-Петербург</span>
+            </button>
+            <button class="main-nav__button-item">
+              <span>Москва</span>
+            </button>
+            <button class="main-nav__button-item">
+              <span>Тверь</span>
+            </button>
+            <button class="main-nav__button-item">
+              <span>Рязань</span>
+            </button>
+          </div>
+        </div>
+
       </div>
     </nav>
 
@@ -94,7 +112,7 @@
 </header>
 
 
-    <main>
+    <main style="background-color: blue; min-height: 3000px;">
       <div class="container">
         <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
         <p><a href="#" data-modal="success">modal--success link</a></p>

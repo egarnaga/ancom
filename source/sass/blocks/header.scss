@@ -5,15 +5,21 @@
   padding-left: 20px;
   padding-right: 25px;
 
-  &__wrapper {
-    display: flex;
-    width: 100%;
-  }
-
-
-  .main-nav__toggle {
+  /* .main-nav__toggle {
     display: none;
+  } */
+}
+
+@media  screen and (max-width: 768px) {
+  .header {
+    padding-top: 10px;
+    padding-left: 15px;
   }
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
 }
 
 .header .header__logo {
@@ -28,4 +34,8 @@
   max-width: none;
   width: 67px;
   height: 42px;
+}
+
+.header--opened {
+  background-color: #FFF9F0;
 }
