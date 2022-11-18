@@ -26,7 +26,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>Анком — Главная</title>
+  <title>Контакты</title>
 
 </head>
 <body>
@@ -40,7 +40,7 @@
   <div class="wrapper">
     <header class="header container ">
   <div class="header__wrapper">
-    <a class="header__logo"  aria-label="Переход на главную">
+    <a class="header__logo"  href="main.html" aria-label="Переход на главную">
       <!-- 1x: 67px; 2x: 134px -->
       <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x" width="67" height="42" alt="Логотип">
     </a>
@@ -54,7 +54,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--active " >Главная</a>
+            <a class="main-nav__link "  href="main.html" >Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link "  href="#" >Каталог</a>
@@ -75,7 +75,7 @@
             <a class="main-nav__link "  href="#" >Новости</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Контакты</a>
+            <a class="main-nav__link  main-nav__link--active " >Контакты</a>
           </li>
         </ul>
 
@@ -112,52 +112,14 @@
 </header>
 
 
-    <main style="background-color: #F0E68C; min-height: 3000px;">
+    <main>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+
       </div>
     </main>
 
     <footer class="footer"></footer>
 
-
-    <div class="modal modal--preload modal--feedback    ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Обычная модалка</p>
-
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
-
-
-    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
-
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
 
   </div>
 

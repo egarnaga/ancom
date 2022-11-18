@@ -3,7 +3,7 @@
 <head>
 
   @@include("source/html/base/head.html")
-  <title>Анком — Главная</title>
+  <title>Контакты</title>
 
 </head>
 <body>
@@ -14,29 +14,18 @@
 
   <div class="wrapper">
     @@include("source/html/base/header.html", {
-      "main": true,
-      "headerActiveLinkIndex": 0
+
+      "headerActiveLinkIndex": 7
     })
 
-    <main style="background-color: #F0E68C; min-height: 3000px;">
+    <main>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+
       </div>
     </main>
 
     @@include("source/html/base/footer.html")
 
-    @@include("source/html/base/modal.html", {
-      "name": "feedback"
-    })
-
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
   </div>
 
   <script src="js/vendor.min.js"></script>

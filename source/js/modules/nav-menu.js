@@ -3,7 +3,7 @@ const navMenu = () => {
   const navToggle = document.querySelector('.main-nav__toggle');
   const header = document.querySelector('.header');
 
-  //var body = document.querySelector('.body');
+  const body = document.querySelector('body');
 
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed'
@@ -11,12 +11,12 @@ const navMenu = () => {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
       header.classList.add('header--opened');
-      //body.classList.add('body-lock');
+      body.classList.add('body-lock');
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       header.classList.remove('header--opened');
-      //body.classList.remove('body-lock');
+      body.classList.remove('body-lock');
     }
   });
 
@@ -26,6 +26,7 @@ const navMenu = () => {
         navMain.classList.remove('main-nav--opened');
         navMain.classList.add('main-nav--closed');
         header.classList.remove('header--opened');
+        body.classList.remove('body-lock');
       }
     }
   });

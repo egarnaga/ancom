@@ -34,7 +34,6 @@
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    //width: 100vw;
 
     background: url(../img/bg/flower-1.svg) 20px 115px/19px 21px no-repeat,
                 url(../img/bg/flower-2.svg) 38px 62px/8px 8px no-repeat,
@@ -85,7 +84,6 @@
   font-weight: 700;
   color: #DC0030;
 }
-
 
 .main-nav__buttons-wrap {
   position: relative;
@@ -193,8 +191,6 @@
   top: 43px;
   right: -5px;
 
-  //display: flex;
-
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
@@ -204,7 +200,6 @@
 
   box-shadow: 0px 20px 12px rgba(71, 53, 21, 0.02), 0px 9px 9px rgba(71, 53, 21, 0.03), 0px 2px 5px rgba(71, 53, 21, 0.03), 0px 0px 0px rgba(71, 53, 21, 0.03);
   border-radius: 5px;
-
 }
 
 .main-nav__buttons-list--opened {
@@ -262,9 +257,6 @@
   background-image: url(../img/bg/selected.svg);
 }
 
-
-
-
 .main-nav__toggle {
   display: none;
 }
@@ -274,26 +266,23 @@
 
   .main-nav__toggle {
     position: absolute;
-    //top: 9.5px;
-    //right: 7px;
+
     top: -2px;
     right: -18px;
-    z-index: 1200;
 
     display: block;
     width: 40px;
     height: 40px;
 
     background-color: transparent;
-    //background-color: green;
     background-image: url(../img/bg/icon-open.svg);
     background-repeat: no-repeat;
     background-position: center center;
 
     cursor: pointer;
     border: none;
+    z-index: 1200;
   }
-
 
   .main-nav--opened .main-nav__toggle {
     top: -2px;
@@ -304,37 +293,23 @@
 
   }
 
-  /* .main-nav--closed .site-list__item {
-    display: none;
-  } */
-
   .main-nav--closed .main-nav__wrapper {
     display: none;
   }
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
+
     top: 42px;
     left: -82px;
-    //right: 10;
-    //width: 100%;
+
     width: 100vw;
     min-height: 299px;
     height: 100vh;
-    //padding-top: 73px;
-    //padding-left: 15px;
-    //background-color: $color-default-white;
 
     background-color: rgba(30, 30, 30, 0.35);
     backdrop-filter: blur(5px);
     z-index: 1000;
-
-    //background-image: url(../img/bg/bg-menu.svg);
-    //background-repeat: no-repeat;
-    //background-position: center bottom;
-    //background-size: cover;
-
-    //z-index: 9000;
   }
 }
 
@@ -343,4 +318,8 @@
     top: 35px;
     left: -72px;
   }
+}
+
+.body-lock {
+  position: fixed;
 }
