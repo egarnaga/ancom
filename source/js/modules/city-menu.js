@@ -21,6 +21,16 @@ const cityMenu = () => {
     }
   });
 
+  window.addEventListener('resize', () => {
+    if (cityButton) {
+      if (window.innerWidth <= 768) {
+        cityButton.disabled = true;
+      } else {
+        cityButton.disabled = false;
+      }
+    }
+  });
+
 };
 
 export {cityMenu};

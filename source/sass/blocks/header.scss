@@ -30,10 +30,25 @@
   line-height: 0;
 }
 
+@media  screen and (max-width: 540px) {
+  .header .header__logo {
+    width: 57px;
+    height: 35px;
+  }
+}
+
+
 .header .header__logo img {
   max-width: none;
   width: 67px;
   height: 42px;
+}
+
+@media  screen and (max-width: 540px) {
+  .header .header__logo img {
+    width: 57px;
+    height: 35px;
+  }
 }
 
 .header--opened {
