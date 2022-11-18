@@ -660,6 +660,7 @@ button,
 
 .main-nav__buttons-wrap {
   position: relative;
+  min-width: 165px;
   margin-left: auto; }
 
 @media screen and (max-width: 768px) {
@@ -840,6 +841,9 @@ button,
 
 .body-lock {
   position: fixed; }
+
+.contacts-page {
+  background-color: #FFF9F0; }
 
 .footer {
   min-height: 100px;
