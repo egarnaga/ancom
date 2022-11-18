@@ -847,8 +847,7 @@ button,
 
 .footer {
   min-height: 100px;
-  padding: 0 60px;
-  background-color: #2c39f2; }
+  padding: 0 60px; }
 
 .modal {
   position: fixed;
