@@ -12,11 +12,13 @@ const navMenu = () => {
       navMain.classList.add('main-nav--opened');
       header.classList.add('header--opened');
       body.classList.add('body-lock');
+      header.classList.add('header__z-index');
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       header.classList.remove('header--opened');
       body.classList.remove('body-lock');
+      header.classList.remove('header__z-index');
     }
   });
 
@@ -27,6 +29,7 @@ const navMenu = () => {
         navMain.classList.add('main-nav--closed');
         header.classList.remove('header--opened');
         body.classList.remove('body-lock');
+        header.classList.remove('header__z-index');
       }
     }
   });

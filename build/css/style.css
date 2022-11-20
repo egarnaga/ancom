@@ -538,6 +538,11 @@ button,
     padding-top: 10px;
     padding-left: 15px; } }
 
+@media screen and (max-width: 400px) {
+  .header__z-index {
+    background-color: #FFF9F0;
+    z-index: 4000; } }
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,10 +836,76 @@ button,
   background-color: #FFF9F0; }
 
 .contacts__header {
+  position: relative;
   padding-top: 79px;
   padding-bottom: 49px;
   padding-left: 138px;
-  padding-right: 138px; }
+  padding-right: 138px;
+  background-image: url(../img/bg/bg-contacts.svg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 1336px) {
+  .contacts__header {
+    background-size: contain; } }
+
+@media screen and (max-width: 1210px) {
+  .contacts__header {
+    padding-top: 49px; } }
+
+@media screen and (max-width: 768px) {
+  .contacts__header {
+    padding-left: 80px; } }
+
+@media screen and (max-width: 540px) {
+  .contacts__header {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .contacts__header {
+    padding-top: 30px;
+    background-image: url(../img/bg/bg-contacts-mobile.svg);
+    background-size: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .contacts__header::after {
+    content: "";
+    position: absolute;
+    top: -46px;
+    left: 45%;
+    width: 25px;
+    height: 66px;
+    background-image: url(../img/bg/twig-5.svg);
+    background-repeat: no-repeat; } }
+
+@media screen and (max-width: 375px) {
+  .contacts__header {
+    padding-top: 22px;
+    padding-bottom: 59px; } }
+
+.contacts__header::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 45px;
+  width: 68px;
+  height: 65px;
+  background-image: url(../img/bg/flower-6.svg);
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 768px) {
+  .contacts__header::before {
+    bottom: -40px;
+    left: 45px;
+    width: 34px; } }
+
+@media screen and (max-width: 400px) {
+  .contacts__header::before {
+    background-image: none; } }
 
 .contacts__header h1 {
   margin: 0;
@@ -843,6 +914,16 @@ button,
   line-height: 83px;
   letter-spacing: -1px;
   color: #1E1E1E; }
+
+@media screen and (max-width: 1210px) {
+  .contacts__header h1 {
+    font-size: 65px;
+    line-height: 73px; } }
+
+@media screen and (max-width: 540px) {
+  .contacts__header h1 {
+    font-size: 36px;
+    line-height: 40px; } }
 
 .contacts__wrapper {
   display: -webkit-box;
