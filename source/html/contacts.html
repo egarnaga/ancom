@@ -109,17 +109,20 @@
             <div class="contacts-form__field">
               <label class="visually-hidden" for="name">Имя</label>
               <input type="text" name="name" id="name" placeholder="Имя" required>
+              <span>Error text</span>
             </div>
 
             <div class="contacts-form__wrapper">
-              <div class="contacts-form__field">
+              <div class="contacts-form__field contacts-form__field-phone">
                 <label class="visually-hidden" for="phone">Телефон</label>
                 <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                <span>Error text</span>
               </div>
 
-              <div class="contacts-form__field">
+              <div class="contacts-form__field contacts-form__field-email">
                 <label class="visually-hidden" for="e-mail">Почта</label>
                 <input type="email" name="e-mail" id="e-mail" placeholder="Почта" required>
+                <span>Error text</span>
               </div>
             </div>
 
@@ -141,22 +144,22 @@
                   <label for="quality">отзывы по качеству продукции</label>
                   <input type="radio" id="quality" name="contact" value="quality">
                 </div>
+              </div>
 
-                <div class="contacts-form__textarea">
-                  <label class="visually-hidden" for="message">Напишите Ваше обращение</label>
-                  <textarea name="message" id="message" placeholder="Чем мы можем вам помочь?" required></textarea>
+              <div class="contacts-form__textarea">
+                <label class="visually-hidden" for="message">Напишите Ваше обращение</label>
+                <textarea name="message" id="message" placeholder="Чем мы можем вам помочь?" required></textarea>
+              </div>
+
+              <div class="contacts-form__file-wrap">
+                <div class="contacts-form__foto">
+                  <label for="foto">Приложить фотографию продукции</label>
+                  <input type="file" name="foto" id="foto">
                 </div>
 
-                <div class="contacts-form__file-wrap">
-                  <div class="contacts-form__foto">
-                    <label for="foto">Приложить фотографию продукции</label>
-                    <input type="file" name="foto" id="foto">
-                  </div>
-
-                  <div class="contacts-form__doc">
-                    <label for="doc">Приложить документ</label>
-                    <input type="file" name="doc" id="doc">
-                  </div>
+                <div class="contacts-form__doc">
+                  <label for="doc">Приложить документ</label>
+                  <input type="file" name="doc" id="doc">
                 </div>
               </div>
 
