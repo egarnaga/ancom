@@ -25,6 +25,15 @@ const cityMenu = () => {
     if (cityButton) {
       if (window.innerWidth <= 768) {
         cityButton.disabled = true;
+
+        if (buttonsList.classList.contains('main-nav__buttons-list--opened'
+        ) & cityButton.classList.contains('main-nav__city-button--opened'
+        )) {
+          buttonsList.classList.add('main-nav__buttons-list--closed');
+          buttonsList.classList.remove('main-nav__buttons-list--opened');
+          cityButton.classList.add('main-nav__city-button--closed');
+          cityButton.classList.remove('main-nav__city-button--opened');
+        }
       } else {
         cityButton.disabled = false;
       }
