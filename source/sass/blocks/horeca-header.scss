@@ -1,5 +1,41 @@
+.horeca-header {
+  padding-top: 10px;
+  padding-bottom: 37.5%;
+
+  background-image: url(../img/bg/bg-horeca@1x.png);
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/bg-horeca@2x.png);
+  }
+}
+
+@media  screen and (max-width: 375px) {
+  .horeca-header {
+    background-image: url(../img/bg/bg-horeca-mobile@1x.png);
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg/bg-horeca-mobile@2x.png);
+    }
+  }
+}
+
+
+.horeca-header img {
+  width: 224px;
+  height: 103px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .horeca-header h1 {
+  max-width: 1040px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 600;
   font-size: 75px;

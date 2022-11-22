@@ -1,5 +1,64 @@
+.four-steps {
+  background-color: #FFFFFF;
+}
+
+
+.four-steps__bg-img {
+  position: relative;
+  padding-top: 256px;
+
+  background-image: url(../img/bg/bg-four-steps.svg);
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.four-steps__bg-img::before {
+  content: "";
+
+  position: absolute;
+
+  top: -104px;
+  right: 33%;
+
+  width: 83px;
+  height: 315px;
+
+  background-image: url(../img/bg/twig-6.svg);
+  background-repeat: no-repeat;
+}
+
+.four-steps__wrapper {
+  display: flex;
+}
+
+.four-steps__img {
+  display: flex;
+  max-width: 864px;
+
+  object-fit: cover;
+
+}
+
+
+.four-steps__img img {
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.four-steps__description {
+  padding-top: 60px;
+  padding-bottom: 59px;
+  padding-left: 58px;
+  padding-right: 27px;
+}
+
 .four-steps__description h2 {
+  max-width: 450px;
   margin: 0;
+  margin-bottom: 70px;
+  margin-left: 6px;
 
   font-weight: 600;
   font-size: 55px;
@@ -15,7 +74,52 @@
   list-style: none;
 }
 
+.four-steps__description li {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.four-steps__description li:nth-child(n + 1) span {
+  background-color: #FFD885;
+}
+
+.four-steps__description li:nth-child(n + 2) span {
+  background-color: #92D660;
+}
+
+.four-steps__description li:nth-child(n + 3) span {
+  color: #FFFFFF;
+
+  background-color: #265113;
+}
+
+.four-steps__description li:nth-child(n + 4) span {
+  color: #FFFFFF;
+
+  background-color: #D6607A;
+}
+
+.four-steps__description span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  margin-right: 25px;
+
+  font-weight: 750;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+
+
+  border-radius: 100%;
+}
+
 .four-steps__description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 
   font-weight: 600;
