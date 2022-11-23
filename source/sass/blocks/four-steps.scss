@@ -1,5 +1,5 @@
 .four-steps {
-  background-color: #FFFFFF;
+  //background-color: #FFFFFF;
 }
 
 
@@ -48,10 +48,15 @@
 }
 
 .four-steps__description {
+  width: 576px;
+  max-width: 576px;
+
   padding-top: 60px;
   padding-bottom: 59px;
   padding-left: 58px;
   padding-right: 27px;
+
+  background-color: #FFFFFF;
 }
 
 .four-steps__description h2 {

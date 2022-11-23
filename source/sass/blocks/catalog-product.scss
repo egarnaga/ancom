@@ -1,16 +1,184 @@
 .catalog-product {
+  display: flex;
 
+  background-color: #FFFFFF;
+}
+
+.catalog-product__wrapper {
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: flex-start;
+  //margin: 0 auto;
 }
 
 .catalog-product ul {
+  //align-self:flex-start;
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
+  margin-right: -5px;
+  padding-top: 5px;
 
   list-style: none;
 }
 
 .catalog-product ul li {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+
+  width: 284px;
+  max-width: 284px;
+  height: 288px;
+  max-height: 288px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.catalog-product__item {
   background-color: black;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalog-product__item--1 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-1-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-1-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--2 {
+  background-image: url(../img/bg/product-2-desktop@1x.svg);
+}
+
+.catalog-product__item--3 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-3-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-3-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--4 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-4-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/product-4-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--5 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-5-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-5-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--6 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-6-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-6-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--7 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-7-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-7-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--8 {
+  background-color: #DC0030;
+}
+
+.catalog-product__item--9 {
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-9-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-9-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--10 {
+
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-10-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-10-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--11 {
+  background-image: url(../img/bg/product-11-desktop@1x.svg);
+}
+
+.catalog-product__item--12 {
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-12-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-12-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--13 {
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-13-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-13-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--14 {
+  background-image: url(../img/bg/linear.png),
+                    url(../img/bg/product-14-desktop@1x.jpg);
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg/linear.png),
+                      url(../img/bg/product-14-desktop@2x.jpg);
+  }
+}
+
+.catalog-product__item--15 {
+  background-image: url(../img/bg/product-15-desktop@1x.svg);
 }
 
 .catalog-product a {
@@ -19,4 +187,9 @@
   line-height: 17px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.catalog-product__item--8 a {
+  font-size: 22px;
+  line-height: 29px;
 }

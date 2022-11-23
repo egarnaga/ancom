@@ -1,11 +1,21 @@
 .clients {
-  background-color: greenyellow;
+  padding-top: 100px;
+  padding-bottom: 104px;
+  padding-left: 84px;
+  padding-right: 84px;
+
+  background-color: #FFD885;
+  background-image: url(../img/bg/bg-clients.svg);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat :no-repeat;
 }
 
 .clients h2 {
   margin: 0;
+  margin-bottom: 58px;
 
-  font-weight: 700;
+  font-weight: 600;
   font-size: 75px;
   line-height: 83px;
   letter-spacing: -1px;
@@ -15,14 +25,56 @@
 .clients ul {
   margin: 0;
   padding: 0;
+  margin-bottom: -21px;
 
   list-style: none;
 }
 
+.clients__item {
+  position: relative;
+
+  padding-left: 59px;
+  margin-bottom: 35px;
+}
+
+.clients__item::before {
+  content: "";
+
+  position: absolute;
+
+  top: -7px;
+  left: 0;
+
+  width: 43px;
+  height: 43px;
+}
+
+.clients__item--1::before {
+
+  background-image: url(../img/bg/clients-1.svg);
+}
+
+.clients__item--2::before {
+
+  background-image: url(../img/bg/clients-2.svg);
+}
+
+.clients__item--3::before {
+
+  background-image: url(../img/bg/clients-3.svg);
+}
+
+.clients__item--4::before {
+
+  background-image: url(../img/bg/clients-4.svg);
+}
+
+
+
 .clients p {
   margin: 0;
 
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   line-height: 29px;
   color: #1E1E1E;

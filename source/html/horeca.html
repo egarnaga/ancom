@@ -199,71 +199,77 @@
         <section class="catalog-product">
           <h2 class="visually-hidden">Каталог продукции</h2>
 
-          <ul>
-            <li>
-              <a href="#">Вареные колбасы</a>
-            </li>
-            <li>
-              <a href="#"></a>
-            </li>
-            <li>
-              <a href="#">Ветчины</a>
-            </li>
-            <li>
-              <a href="#">Сосиски</a>
-            </li>
-            <li>
-              <a href="#">Сардельки</a>
-            </li>
+          <div class="catalog-product__wrapper">
+            <ul>
+              <li class="catalog-product__item catalog-product__item--1">
+                <a href="#">Вареные колбасы</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--2">
+                <a href="#"></a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--3">
+                <a href="#">Ветчины</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--4">
+                <a href="#">Сосиски</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--5">
+                <a href="#">Сардельки</a>
+              </li>
 
-            <li>
-              <a href="#">Колбасы полукопченые</a>
-            </li>
-            <li>
-              <a href="#">Колбасы варено-копченые</a>
-            </li>
-            <li>
-              <a href="#">Скачать каталог</a>
-            </li>
-            <li>
-              <a href="#">Колбасы сырокопченые</a>
-            </li>
-            <li>
-              <a href="#">Деликатесы из мяса и птицы</a>
-            </li>
+              <li class="catalog-product__item catalog-product__item--6">
+                <a href="#">Колбасы полукопченые</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--7">
+                <a href="#">Колбасы варено-копченые</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--8">
+                <div>
+                  <a class="btn-submit" aria-label="Скачать каталог">
+                    <span>Скачать каталог</span>
+                  </a>
+                </div>
+              </li>
+              <li class="catalog-product__item catalog-product__item--9">
+                <a href="#">Колбасы сырокопченые</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--10">
+                <a href="#">Деликатесы из мяса и птицы</a>
+              </li>
 
-            <li>
-              <a href="#"></a>
-            </li>
-            <li>
-              <a href="#">Деликатесы варено-копченые</a>
-            </li>
-            <li>
-              <a href="#">Деликатесы</a>
-            </li>
-            <li>
-              <a href="#">Нарезка</a>
-            </li>
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
+              <li class="catalog-product__item catalog-product__item--11">
+                <a href="#"></a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--12">
+                <a href="#">Деликатесы варено-копченые</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--13">
+                <a href="#">Деликатесы</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--14">
+                <a href="#">Нарезка</a>
+              </li>
+              <li class="catalog-product__item catalog-product__item--15">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="clients">
           <h2>Наши клиенты</h2>
 
           <ul>
-            <li>
+            <li class="clients__item clients__item--1">
               <p>Рестораны, кафе</p>
             </li>
-            <li>
+            <li class="clients__item clients__item--2">
               <p>Пиццерии, закусочные</p>
             </li>
-            <li>
+            <li class="clients__item clients__item--3">
               <p>Комбинаты общественного питания</p>
             </li>
-            <li>
+            <li class="clients__item clients__item--4">
               <p>Гостиницы, отели</p>
             </li>
           </ul>
@@ -282,27 +288,87 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.webp 1x, img/content/partners-1-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-1-desktop@1x.webp 1x, img/content/partners-1-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.png 1x, img/content/partners-1-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-1-desktop@1x.png" srcset="img/content/partners-1-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.webp 1x, img/content/partners-2-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-2-desktop@1x.webp 1x, img/content/partners-2-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.png 1x, img/content/partners-2-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-2-desktop@1x.png" srcset="img/content/partners-2-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.webp 1x, img/content/partners-3-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-3-desktop@1x.webp 1x, img/content/partners-3-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.png 1x, img/content/partners-3-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-3-desktop@1x.png" srcset="img/content/partners-3-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -314,27 +380,87 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.webp 1x, img/content/partners-1-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-1-desktop@1x.webp 1x, img/content/partners-1-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.png 1x, img/content/partners-1-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-1-desktop@1x.png" srcset="img/content/partners-1-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.webp 1x, img/content/partners-2-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-2-desktop@1x.webp 1x, img/content/partners-2-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.png 1x, img/content/partners-2-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-2-desktop@1x.png" srcset="img/content/partners-2-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.webp 1x, img/content/partners-3-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-3-desktop@1x.webp 1x, img/content/partners-3-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.png 1x, img/content/partners-3-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-3-desktop@1x.png" srcset="img/content/partners-3-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -346,27 +472,87 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.webp 1x, img/content/partners-1-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-1-desktop@1x.webp 1x, img/content/partners-1-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-1-mobile@1x.png 1x, img/content/partners-1-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-1-desktop@1x.png" srcset="img/content/partners-1-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.webp 1x, img/content/partners-2-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-2-desktop@1x.webp 1x, img/content/partners-2-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-2-mobile@1x.png 1x, img/content/partners-2-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-2-desktop@1x.png" srcset="img/content/partners-2-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.webp 1x, img/content/partners-3-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-3-desktop@1x.webp 1x, img/content/partners-3-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-3-mobile@1x.png 1x, img/content/partners-3-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-3-desktop@1x.png" srcset="img/content/partners-3-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="" alt="">
+                  <picture>
+                    <!-- 1x: 79px; 2x: 158px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.webp 1x, img/content/partners-4-mobile@2x.webp 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <source type="image/webp" srcset="img/content/partners-4-desktop@1x.webp 1x, img/content/partners-4-desktop@2x.webp 2x">
+
+                      <!-- 1x: 79px; 2x: 158px -->
+                    <source media="(max-width: 375px)" srcset="img/content/partners-4-mobile@1x.png 1x, img/content/partners-4-mobile@2x.png 2x">
+
+                    <!-- 1x: 114px; 2x: 228px -->
+                    <img src="img/content/partners-4-desktop@1x.png" srcset="img/content/partners-4-desktop@2x.png 2x" alt="">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -412,8 +598,8 @@
               </div>
 
               <div class="contacts-form__btn">
-                <button class="btn-submit" type="submit" aria-label="Отправить">
-                  <span>Отправить</span>
+                <button class="btn-submit" type="submit" aria-label="Отправить заявку">
+                  <span>Отправить заявку</span>
                 </button>
               </div>
 

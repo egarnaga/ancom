@@ -1,8 +1,80 @@
+.form-order {
+  padding-top: 518px;
+  //padding-top: 36%;
+
+  background-image: url(../img/bg/bg-form-order.svg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-order__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 87px;
+
+
+  background-color: #FFF9F0;
+  box-shadow: 0px -16px 104px rgba(49, 38, 10, 0.08);
+  border-radius: 5px;
+}
+
 .form-order h2 {
   margin: 0;
+  padding-left: 147px;
 
-  font-weight: 700;
+  font-weight: 600;
   font-size: 55px;
   line-height: 61px;
   color: #000000;
+}
+
+
+.form-order .contacts-form__form {
+  position: relative;
+
+  width: 100%;
+  max-width: 697px;
+  padding-top: 25px;
+  padding-bottom: 87px;
+  padding-left: 119px;
+  padding-right: 118px;
+}
+
+.form-order .contacts-form__form::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  right: -33px;
+
+  width: 72px;
+  height: 196px;
+
+  background-image: url(../img/bg/twig-7.svg);
+  background-repeat: no-repeat;
+}
+
+.form-order .contacts-form__form p {
+  max-width: 454px;
+  margin-bottom: 55px;
+  padding-left: 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #1E1E1E;
+}
+
+.form-order .contacts-form__field {
+  margin-bottom: 22px;
+}
+
+.form-order .contacts-form__textarea {
+  margin-bottom: 50px;
+}
+
+.form-order .contacts-form__consent {
+  margin-top: 22px;
 }
