@@ -4,42 +4,190 @@
   background-color: #FFFFFF;
 }
 
-.catalog-product__wrapper {
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
-  //align-items: flex-start;
-  //margin: 0 auto;
+.catalog-product__wrap {
+  display: none;
 }
 
-.catalog-product ul {
-  //align-self:flex-start;
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+
+    background-color: #FFF9F0;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #000000;
+  }
+}
+
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    list-style: none;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap ul li {
+    position: relative;
+
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap ul li::before {
+    content: "";
+    position: absolute;
+
+    top: 8px;
+    left: 0;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: #DC0030;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap li span  {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E1E1E;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__btn {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrap .catalog-product__btn a {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__imges {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5%;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__imges img {
+    width: 49.5%;
+    margin-right: 0.5%;
+    margin-bottom: 2px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-product__wrapper {
+    display: none;
+  }
+}
+
+.catalog-product__wrapper ul {
+
   display: flex;
+
   flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
-  margin-right: -5px;
+
+  margin-right: -0.4%;
+
   padding-top: 5px;
 
   list-style: none;
 }
 
-.catalog-product ul li {
+.catalog-product__wrapper ul li {
   display: flex;
   justify-content: center;
   align-items:flex-end;
 
-  width: 284px;
-  max-width: 284px;
+
+  width: 19.6%;
+
+  max-width: 19.6%;
+
+
+
   height: 288px;
   max-height: 288px;
+
   margin-bottom: 5px;
-  margin-right: 5px;
+
+  margin-right: 0.4%;
+
   padding-top: 26px;
   padding-bottom: 26px;
   padding-left: 26px;
   padding-right: 26px;
+}
+
+@media  screen and (max-width: 1125px) {
+  .catalog-product__wrapper ul li {
+    height: 222px;
+    max-height: 222px;
+  }
+}
+
+@media  screen and (max-width: 950px) {
+  .catalog-product__wrapper ul li {
+    height: 187px;
+    max-height: 187px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-product__wrapper ul li {
+    height: 152px;
+    max-height: 152px;
+  }
+}
+
+.catalog-product__wrapper ul li:nth-child(8) {
+  align-items: center;
 }
 
 .catalog-product__item {
@@ -181,7 +329,7 @@
   background-image: url(../img/bg/product-15-desktop@1x.svg);
 }
 
-.catalog-product a {
+.catalog-product__wrapper span {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -189,7 +337,45 @@
   color: #FFFFFF;
 }
 
+.catalog-product .catalog-product__item--8 {
+  padding: 0;
+}
+
+.catalog-product__item--8 div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .catalog-product__item--8 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.catalog-product__item--8 a span {
   font-size: 22px;
   line-height: 29px;
+}
+
+@media  screen and (max-width: 1125px) {
+  .catalog-product__item--8 a span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.catalog-product__item--8 a span::after {
+  top: 5px;
+}
+
+@media  screen and (max-width: 1125px) {
+  .catalog-product__item--8 a span::after {
+    top: 1px;
+    right: 13px;
+  }
 }

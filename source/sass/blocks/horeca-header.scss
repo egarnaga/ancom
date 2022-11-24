@@ -1,4 +1,5 @@
 .horeca-header {
+
   padding-top: 10px;
   padding-bottom: 37.5%;
 
@@ -6,6 +7,7 @@
   background-position: bottom center;
   background-size: 100%;
   background-repeat: no-repeat;
+
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url(../img/bg/bg-horeca@2x.png);
@@ -22,6 +24,15 @@
   }
 }
 
+@media  screen and (max-width: 540px) {
+  .horeca-header {
+
+    padding-bottom: 50%;
+
+    background-position: 0 77px;
+  }
+}
+
 
 .horeca-header img {
   width: 224px;
@@ -29,6 +40,14 @@
 
   margin-left: auto;
   margin-right: auto;
+
+}
+
+@media  screen and (max-width: 540px) {
+  .horeca-header img {
+    width: 121px;
+    height: 55px;
+  }
 }
 
 .horeca-header h1 {
@@ -43,4 +62,32 @@
   text-align: center;
   letter-spacing: -1px;
   color: #000000;
+}
+
+@media  screen and (max-width: 1090px) {
+  .horeca-header h1 {
+
+    font-size: 55px;
+    line-height: 63px;
+  }
+}
+
+@media  screen and (max-width: 790px) {
+  .horeca-header h1 {
+    max-width: 500px;
+
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
+
+@media  screen and (max-width: 540px) {
+  .horeca-header h1 {
+    max-width: 314px;
+
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0;
+  }
 }
