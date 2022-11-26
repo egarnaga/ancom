@@ -1981,6 +1981,286 @@ button,
 .franchise-page {
   background-color: #FFF9F0; }
 
+.franchise-header h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-header h1 {
+    font-size: 36px;
+    line-height: 40px; } }
+
+.franchise-header p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E; }
+
+.franchise-header__wrap dl {
+  margin: 0; }
+
+.franchise-header__wrap dt {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-header__wrap dt {
+    font-size: 22px;
+    line-height: 29px; } }
+
+.franchise-header__wrap dd {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-header__wrap dd {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px; } }
+
+.manufacture h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .manufacture h2 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000; } }
+
+.manufacture__wrapper ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.manufacture__wrapper span {
+  font-weight: 750;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000; }
+
+@media screen and (max-width: 540px) {
+  .manufacture__wrapper span {
+    font-size: 14px;
+    line-height: 18px; } }
+
+.manufacture__wrapper p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .manufacture__wrapper p {
+    font-size: 14px;
+    line-height: 18px; } }
+
+.manufacture__wrapper strong {
+  font-weight: 600; }
+
+.advantage__wrapper p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E; }
+
+.franchise-opening h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening h2 {
+    font-size: 36px;
+    line-height: 40px; } }
+
+.franchise-opening__slider-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.franchise-opening__date span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__date span {
+    font-size: 12px;
+    line-height: 16px; } }
+
+.franchise-opening__slider-card h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__slider-card h3 {
+    font-size: 22px;
+    line-height: 29px; } }
+
+.franchise-opening__slider-card address {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__slider-card address {
+    font-size: 14px;
+    line-height: 18px; } }
+
+.franchise-opening__wrapper h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+.franchise-opening__slider-shop-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.franchise-opening__slider-shop-card address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF; }
+
+.reviews h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .reviews h2 {
+    font-size: 36px;
+    line-height: 40px; } }
+
+.reviews__slider-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__card-wrapper blockquote {
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .reviews__card-wrapper blockquote {
+    font-size: 14px;
+    line-height: 18px; } }
+
+.reviews__card-wrapper blockquote strong {
+  font-weight: 600; }
+
+.reviews__card-wrapper cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .reviews__card-wrapper cite {
+    font-size: 12px;
+    line-height: 16px; } }
+
+.reviews__card-wrapper address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .reviews__card-wrapper address {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0; } }
+
+.franchise-map__description h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-map__description h2 {
+    font-size: 22px;
+    line-height: 29px; } }
+
+.franchise-map__description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.franchise-map__description address {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+  opacity: 0.7; }
+
+@media screen and (max-width: 540px) {
+  .franchise-map__description address {
+    font-size: 12px;
+    line-height: 16px; } }
+
+.franchise-application .contacts-form__form p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #1E1E1E; }
+
+@media screen and (max-width: 540px) {
+  .franchise-application .contacts-form__form p {
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0; } }
+
 .contacts-page {
   background-color: #FFF9F0; }
 

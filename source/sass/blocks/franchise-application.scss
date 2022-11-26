@@ -1,0 +1,18 @@
+.franchise-application .contacts-form__form p {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-application .contacts-form__form p {
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0;
+  }
+}

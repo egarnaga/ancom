@@ -1,0 +1,39 @@
+.franchise-map__description h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-map__description h2 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.franchise-map__description ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.franchise-map__description address {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+  opacity: 0.7;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-map__description address {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

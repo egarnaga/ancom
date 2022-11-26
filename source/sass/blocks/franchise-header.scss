@@ -1,0 +1,63 @@
+.franchise-header h1 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-header h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.franchise-header p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}
+
+.franchise-header__wrap dl {
+  margin: 0;
+}
+
+.franchise-header__wrap dt {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-header__wrap dt {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.franchise-header__wrap dd {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-header__wrap dd {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+  }
+}

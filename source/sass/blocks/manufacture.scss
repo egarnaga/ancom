@@ -1,0 +1,59 @@
+.manufacture h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .manufacture h2 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+  }
+}
+
+.manufacture__wrapper ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.manufacture__wrapper span {
+  font-weight: 750;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+@media  screen and (max-width: 540px) {
+  .manufacture__wrapper span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.manufacture__wrapper p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .manufacture__wrapper p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+.manufacture__wrapper strong {
+  font-weight: 600;
+}

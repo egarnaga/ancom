@@ -1,0 +1,75 @@
+.reviews h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .reviews h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.reviews__slider-wrapper {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__card-wrapper blockquote {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .reviews__card-wrapper blockquote {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.reviews__card-wrapper blockquote strong {
+  font-weight: 600;
+}
+
+.reviews__card-wrapper cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .reviews__card-wrapper cite {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.reviews__card-wrapper address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .reviews__card-wrapper address {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+}

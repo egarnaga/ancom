@@ -1,0 +1,94 @@
+.franchise-opening h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-opening h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.franchise-opening__slider-wrapper {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.franchise-opening__date span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-opening__date span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.franchise-opening__slider-card h3 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-opening__slider-card h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.franchise-opening__slider-card address {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .franchise-opening__slider-card address {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.franchise-opening__wrapper h3 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+.franchise-opening__slider-shop-wrapper {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.franchise-opening__slider-shop-card address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
