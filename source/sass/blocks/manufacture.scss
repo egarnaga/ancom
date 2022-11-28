@@ -1,3 +1,13 @@
+.manufacture {
+  background-color: greenyellow
+}
+
+@media  screen and (max-width: 540px) {
+  .manufacture {
+    filter: drop-shadow(0px -16px 134px rgba(49, 36, 10, 0.21));
+  }
+}
+
 .manufacture h2 {
   margin: 0;
 
