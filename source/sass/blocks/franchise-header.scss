@@ -1,5 +1,20 @@
+.franchise-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 91px;
+  padding-bottom: 146px;
+  padding-left: 9.58%;
+  padding-right: 8%;
+}
+
+.franchise-header__wrapper {
+  max-width: 698px;
+}
+
 .franchise-header h1 {
   margin: 0;
+  margin-top: 6px;
+  margin-bottom: 17px;
 
   font-weight: 600;
   font-size: 75px;
@@ -16,7 +31,9 @@
 }
 
 .franchise-header p {
+  max-width: 368px;
   margin: 0;
+  margin-bottom: 68px;
 
   font-size: 14px;
   line-height: 19px;
@@ -24,8 +41,56 @@
   color: #1E1E1E;
 }
 
+.franchise-header__btn .btn-submit {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 .franchise-header__wrap dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 698px;
+  max-width: 698px;
   margin: 0;
+}
+
+.franchise-header__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  min-height: 180px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-shadow: 2px 1px 45px rgba(80, 65, 15, 0.09);
+}
+
+
+
+.franchise-header__item--business {
+  background-color: #5EAD41;
+}
+
+.franchise-header__item--payback,
+.franchise-header__item--royalty {
+  background-color: #FFF9F0;
+}
+
+.franchise-header__item--payment {
+  background-color: #265113;
+
+}
+
+.franchise-header__item--profit {
+  width: 61%;
+
+  background-color: #FFD885;
 }
 
 .franchise-header__wrap dt {
@@ -51,6 +116,13 @@
   line-height: 23px;
   color: #1E1E1E;
 
+}
+
+.franchise-header__wrap .franchise-header__item--business dt,
+.franchise-header__wrap .franchise-header__item--payment dt,
+.franchise-header__wrap .franchise-header__item--business dd,
+.franchise-header__wrap .franchise-header__item--payment dd {
+  color: #FFFFFF;
 }
 
 @media  screen and (max-width: 540px) {
