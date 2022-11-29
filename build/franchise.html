@@ -153,7 +153,19 @@
 
         <section class="manufacture">
           <div class="manufacture__img">
-            <img src="" alt="">
+            <picture>
+              <!-- 1x: 375px; 2x: 750px -->
+              <source type="image/webp" media="(max-width: 375px)" srcset="img/content/manufacture-mobile@1x.webp 1x, img/content/manufacture-mobile@2x.webp 2x">
+
+              <!-- 1x: 720px; 2x: 1440px -->
+              <source type="image/webp" srcset="img/content/manufacture-desktop@1x.webp 1x, img/content/manufacture-desktop@2x.webp 2x">
+
+                <!-- 1x: 375px; 2x: 750px -->
+              <source media="(max-width: 375px)" srcset="img/content/manufacture-mobile@1x.jpg 1x, img/content/manufacture-mobile@2x.jpg 2x">
+
+              <!-- 1x: 720px; 2x: 1440px -->
+              <img src="img/content/manufacture-desktop@1x.jpg" srcset="img/content/manufacture-desktop@2x.jpg 2x" alt="">
+            </picture>
           </div>
 
           <div class="manufacture__wrapper">
