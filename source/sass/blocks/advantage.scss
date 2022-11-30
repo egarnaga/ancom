@@ -1,6 +1,8 @@
 .advantage {
   padding-top: 112px;
   padding-bottom: 0;
+
+
 }
 
 @media  screen and (max-width: 540px) {
@@ -11,6 +13,12 @@
     box-shadow: none;
   }
 }
+
+
+.advantage.reasons-work {
+  box-shadow: 0px 14px 134px rgba(49, 33, 10, 0.08);
+}
+
 
 .advantage h2 {
   margin-bottom: 0;

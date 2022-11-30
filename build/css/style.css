@@ -2591,6 +2591,10 @@ button,
     -webkit-box-shadow: none;
             box-shadow: none; } }
 
+.advantage.reasons-work {
+  -webkit-box-shadow: 0px 14px 134px rgba(49, 33, 10, 0.08);
+          box-shadow: 0px 14px 134px rgba(49, 33, 10, 0.08); }
+
 .advantage h2 {
   margin-bottom: 0;
   font-size: 75px;
@@ -2662,10 +2666,48 @@ button,
     margin-left: 15px;
     margin-right: 15px; } }
 
-.franchise-opening {
-  background-color: greenyellow; }
+.franchise-opening__bg {
+  background-image: url(../img/bg/bg-franchise-opening.svg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-.franchise-opening h2 {
+@media screen and (max-width: 540px) {
+  .franchise-opening__bg {
+    background-image: url(../img/bg/bg-franchise-opening-mobile.svg);
+    background-position: bottom right;
+    background-size: auto; } }
+
+.franchise-opening__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 66px;
+  padding-left: 139px;
+  padding-right: 138px; }
+
+@media screen and (max-width: 956px) {
+  .franchise-opening__wrap {
+    padding-left: 70px;
+    padding-right: 70px; } }
+
+@media screen and (max-width: 830px) {
+  .franchise-opening__wrap {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__wrap {
+    padding-top: 50px;
+    padding-bottom: 54px;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+.franchise-opening__wrap h2 {
   margin: 0;
   font-weight: 600;
   font-size: 75px;
@@ -2673,15 +2715,136 @@ button,
   letter-spacing: -1px;
   color: #1E1E1E; }
 
+@media screen and (max-width: 1168px) {
+  .franchise-opening__wrap h2 {
+    font-size: 55px;
+    line-height: 63px; } }
+
+@media screen and (max-width: 830px) {
+  .franchise-opening__wrap h2 {
+    margin-right: 40px; } }
+
 @media screen and (max-width: 540px) {
-  .franchise-opening h2 {
+  .franchise-opening__wrap h2 {
+    max-width: 200px;
     font-size: 36px;
     line-height: 40px; } }
 
+.franchise-opening__buttons-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.franchise-opening__buttons-slider .swiper-button-prev {
+  margin-right: 17px; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__buttons-slider .swiper-button-prev {
+    margin-right: 8px; } }
+
+.franchise-opening__buttons-slider .swiper-button-prev,
+.franchise-opening__buttons-slider .swiper-button-next {
+  width: 57px;
+  height: 57px;
+  font-size: 0;
+  background-color: #FFFFFF;
+  background-image: url(../img/bg/btn-arrow-slider-black.svg);
+  background-position: center center;
+  -webkit-box-shadow: 1px 4px 21px rgba(62, 47, 8, 0.05);
+          box-shadow: 1px 4px 21px rgba(62, 47, 8, 0.05);
+  border: 1.5px solid #FFFFFF;
+  border-radius: 7.5px;
+  cursor: pointer; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__buttons-slider .swiper-button-prev,
+  .franchise-opening__buttons-slider .swiper-button-next {
+    width: 32px;
+    height: 32px; } }
+
+.franchise-opening__buttons-slider .swiper-button-next {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+
+.franchise-opening__buttons-slider .swiper-button-prev:hover,
+.franchise-opening__buttons-slider .swiper-button-next:hover {
+  border: 1.5px solid #1E1E1E; }
+
+.franchise-opening__buttons-slider .swiper-button-disabled {
+  background-color: #E3D3D3;
+  background-image: url(../img/bg/btn-arrow-slider-white.svg);
+  border: 1.5px solid #E3D3D3;
+  cursor: default; }
+
+.franchise-opening__buttons-slider .swiper-button-disabled:hover {
+  border: 1.5px solid #E3D3D3; }
+
+.franchise-opening__slider-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 112px; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__slider-container {
+    padding-bottom: 105px; } }
+
 .franchise-opening__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.franchise-opening__slider-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 400px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__slider-card {
+    max-width: 302px; } }
+
+.franchise-opening__date {
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+  padding-right: 19px;
+  background: #FFD885;
+  border-radius: 50px; }
+
+@media screen and (max-width: 540px) {
+  .franchise-opening__date {
+    margin-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+    padding-right: 11px; } }
 
 .franchise-opening__date span {
   font-weight: 600;
@@ -2696,6 +2859,8 @@ button,
 
 .franchise-opening__slider-card h3 {
   margin: 0;
+  margin-top: 20px;
+  margin-bottom: 3px;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
@@ -2704,6 +2869,8 @@ button,
 
 @media screen and (max-width: 540px) {
   .franchise-opening__slider-card h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-size: 22px;
     line-height: 29px; } }
 
@@ -2718,6 +2885,10 @@ button,
   .franchise-opening__slider-card address {
     font-size: 14px;
     line-height: 18px; } }
+
+.franchise-opening__wrapper {
+  -webkit-box-shadow: 0px 13px 134px rgba(49, 24, 10, 0.08);
+          box-shadow: 0px 13px 134px rgba(49, 24, 10, 0.08); }
 
 .franchise-opening__wrapper h3 {
   margin: 0;
@@ -2738,6 +2909,9 @@ button,
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF; }
+
+.reviews {
+  background-color: greenyellow; }
 
 .reviews h2 {
   margin: 0;

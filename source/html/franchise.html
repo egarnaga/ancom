@@ -241,102 +241,105 @@
         </section>
 
         <section class="franchise-opening">
-          <h2>Открытия франшиз</h2>
+          <div class="franchise-opening__bg">
+            <div class="franchise-opening__wrap">
+              <h2>Открытия франшиз</h2>
 
-          <div class="franchise-opening__slider-container swiper">
-
-            <div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="franchise-opening__buttons-slider">
+                <div class="swiper-button-prev franchise-opening__btn-prev"></div>
+                <div class="swiper-button-next franchise-opening__btn-next"></div>
+              </div>
             </div>
 
-            <ul class="swiper-wrapper franchise-opening__slider-wrapper">
-              <li class="franchise-opening__slider-card">
-                <time class="franchise-opening__date" datetime="2022-04-12">
-                  <span>12 апреля 2022</span>
-                </time>
-                <picture>
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.webp 1x, img/content/card-1-mobile@2x.webp 2x">
+            <div class="franchise-opening__slider-container swiper">
+              <ul class="swiper-wrapper franchise-opening__slider-wrapper">
+                <li class="swiper-slide franchise-opening__slider-card">
+                  <time class="franchise-opening__date" datetime="2022-04-12">
+                    <span>12 апреля 2022</span>
+                  </time>
+                  <picture>
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.webp 1x, img/content/card-1-mobile@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" srcset="img/content/card-1-desktop@1x.webp 1x, img/content/card-1-desktop@2x.webp 2x">
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <source type="image/webp" srcset="img/content/card-1-desktop@1x.webp 1x, img/content/card-1-desktop@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.jpg 1x, img/content/card-1-mobile@2x.jpg 2x">
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.jpg 1x, img/content/card-1-mobile@2x.jpg 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <img src="img/content/card-1-desktop@1x.jpg" srcset="img/content/card-1-desktop@2x.jpg 2x" alt="">
-                </picture>
-                <h3>Красногорск</h3>
-                <address>Митинская, 36</address>
-              </li>
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <img src="img/content/card-1-desktop@1x.jpg" srcset="img/content/card-1-desktop@2x.jpg 2x" alt="">
+                  </picture>
+                  <h3>Красногорск</h3>
+                  <address>Митинская, 36</address>
+                </li>
 
-              <li class="franchise-opening__slider-card">
-                <time class="franchise-opening__date" datetime="2022-05-21">
-                  <span>21 мая 2022</span>
-                </time>
-                <picture>
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.webp 1x, img/content/card-2-mobile@2x.webp 2x">
+                <li class="swiper-slide franchise-opening__slider-card">
+                  <time class="franchise-opening__date" datetime="2022-05-21">
+                    <span>21 мая 2022</span>
+                  </time>
+                  <picture>
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.webp 1x, img/content/card-2-mobile@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" srcset="img/content/card-2-desktop@1x.webp 1x, img/content/card-2-desktop@2x.webp 2x">
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <source type="image/webp" srcset="img/content/card-2-desktop@1x.webp 1x, img/content/card-2-desktop@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.jpg 1x, img/content/card-2-mobile@2x.jpg 2x">
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.jpg 1x, img/content/card-2-mobile@2x.jpg 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <img src="img/content/card-2-desktop@1x.jpg" srcset="img/content/card-2-desktop@2x.jpg 2x" alt="">
-                </picture>
-                <h3>Москва</h3>
-                <address>Митинская, 36</address>
-              </li>
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <img src="img/content/card-2-desktop@1x.jpg" srcset="img/content/card-2-desktop@2x.jpg 2x" alt="">
+                  </picture>
+                  <h3>Москва</h3>
+                  <address>Митинская, 36</address>
+                </li>
 
-              <li class="franchise-opening__slider-card">
-                <time class="franchise-opening__date" datetime="2022-06-07">
-                  <span>7 июня 2022</span>
-                </time>
-                <picture>
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-3-mobile@1x.webp 1x, img/content/card-3-mobile@2x.webp 2x">
+                <li class="swiper-slide franchise-opening__slider-card">
+                  <time class="franchise-opening__date" datetime="2022-06-07">
+                    <span>7 июня 2022</span>
+                  </time>
+                  <picture>
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.webp 1x, img/content/card-1-mobile@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" srcset="img/content/card-3-desktop@1x.webp 1x, img/content/card-3-desktop@2x.webp 2x">
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <source type="image/webp" srcset="img/content/card-3-desktop@1x.webp 1x, img/content/card-3-desktop@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source media="(max-width: 375px)" srcset="img/content/card-3-mobile@1x.jpg 1x, img/content/card-3-mobile@2x.jpg 2x">
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source media="(max-width: 375px)" srcset="img/content/card-1-mobile@1x.jpg 1x, img/content/card-1-mobile@2x.jpg 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <img src="img/content/card-3-desktop@1x.jpg" srcset="img/content/card-3-desktop@2x.jpg 2x" alt="">
-                </picture>
-                <h3>Тверь</h3>
-                <address>Митинская, 36</address>
-              </li>
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <img src="img/content/card-3-desktop@1x.jpg" srcset="img/content/card-3-desktop@2x.jpg 2x" alt="">
+                  </picture>
+                  <h3>Тверь</h3>
+                  <address>Митинская, 36</address>
+                </li>
 
-              <li class="franchise-opening__slider-card">
-                <time class="franchise-opening__date" datetime="2022-06-18">
-                  <span>18 июня 2022</span>
-                </time>
-                <picture>
-                <picture>
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-4-mobile@1x.webp 1x, img/content/card-4-mobile@2x.webp 2x">
+                <li class="swiper-slide franchise-opening__slider-card">
+                  <time class="franchise-opening__date" datetime="2022-06-18">
+                    <span>18 июня 2022</span>
+                  </time>
+                  <picture>
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source type="image/webp" media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.webp 1x, img/content/card-2-mobile@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source type="image/webp" srcset="img/content/card-4-desktop@1x.webp 1x, img/content/card-4-desktop@2x.webp 2x">
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <source type="image/webp" srcset="img/content/card-4-desktop@1x.webp 1x, img/content/card-4-desktop@2x.webp 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <source media="(max-width: 375px)" srcset="img/content/card-4-mobile@1x.jpg 1x, img/content/card-4-mobile@2x.jpg 2x">
+                    <!-- 1x: 302px; 2x: 604px -->
+                    <source media="(max-width: 375px)" srcset="img/content/card-2-mobile@1x.jpg 1x, img/content/card-2-mobile@2x.jpg 2x">
 
-                  <!-- 1x: px; 2x: px -->
-                  <img src="img/content/card-4-desktop@1x.jpg" srcset="img/content/card-4-desktop@2x.jpg 2x" alt="">
-                </picture>
-                <h3>Подольск</h3>
-                <address>Митинская, 36</address>
-              </li>
-            </ul>
+                    <!-- 1x: 400px; 2x: 800px -->
+                    <img src="img/content/card-4-desktop@1x.jpg" srcset="img/content/card-4-desktop@2x.jpg 2x" alt="">
+                  </picture>
+                  <h3>Подольск</h3>
+                  <address>Митинская, 36</address>
+                </li>
+              </ul>
+            </div>
           </div>
+
 
           <div class="franchise-opening__wrapper">
             <h3>Наши магазины</h3>
