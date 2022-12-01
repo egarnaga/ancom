@@ -8,6 +8,10 @@ import {franchiseOpeningSlider} from './modules/franchise-opening-slider';
 import {shopSlider} from './modules/shop-slider';
 import {reviewsSlider} from './modules/reviews-slider';
 
+
+//import {franchiseMap} from './modules/franchise-map';
+
+
 // Utils
 // ---------------------------------
 
@@ -23,3 +27,5 @@ navMenu();
 franchiseOpeningSlider();
 shopSlider();
 reviewsSlider();
+
+//franchiseMap();

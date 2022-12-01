@@ -630,35 +630,67 @@
           <div class="franchise-map__description">
             <h2>Мы рассматриваем для открытия франшизы «Анком» следующие территории:</h2>
 
-            <ul>
-              <li>
-                <address>Москва / Московская область</address>
-              </li>
-              <li>
-                <address>Владимир / Владимирская область</address>
-              </li>
-              <li>
-                <address>Иваново / Ивановская область</address>
-              </li>
-              <li>
-                <address>Калуга / Калужская область</address>
-              </li>
-              <li>
-                <address>Рязань / Рязанская область</address>
-              </li>
-              <li>
-                <address>Тверь / Тверская область</address>
-              </li>
-              <li>
-                <address>Тула / Тульская область</address>
-              </li>
-              <li>
-                <address>Ярославль / Ярославская область</address>
-              </li>
-            </ul>
+            <div class="franchise-map__lists">
+              <ul>
+                <li class="franchise-map__item franchise-map__item--red">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Москва / Московская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--yellow">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Владимир / Владимирская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--pink">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Иваново / Ивановская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--dark">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Калуга / Калужская область</address>
+                </li>
+
+              </ul>
+
+              <ul>
+                <li class="franchise-map__item franchise-map__item--green">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Рязань / Рязанская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--orange">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Тверь / Тверская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--violet">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Тула / Тульская область</address>
+                </li>
+                <li class="franchise-map__item franchise-map__item--blue">
+                  <svg>
+                    <use xlink:href="#icon-marker"></use>
+                  </svg>
+                  <address>Ярославль / Ярославская область</address>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="franchise-map__iframe"></div>
+          <div class="franchise-map__map">
+            <div id="map-test" class="map franchise-map__map-wrap"></div>
+          </div>
         </section>
 
         <section class="contacts-form form-order franchise-application">
@@ -714,8 +746,156 @@
     @@include("source/html/base/footer.html")
 
   </div>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script>
+    let center = [55.9609970510647,37.62895945507812];
+    let moscow = [55.58422718162347,37.38553349999997];
+    let vladimir = [56.13484869872823,40.42268299999998];
+    let ivanovo = [57.008516580511966,40.99702549999998];
+    let kaluga = [54.53649918608257,36.19510799999998];
+    let ryazan = [54.670370906365456,39.718238];
+    let tver = [56.85962317897414,35.889990999999974];
+    let tula = [54.18117312324303,37.61855149999991];
+    let yaroslavl = [57.65072373894173,39.86612299999997];
+
+    function init() {
+      let map = new ymaps.Map('map-test', {
+        center: center,
+        zoom: 6
+      });
+
+
+
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: black; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+
+      placemarkMoscow = new ymaps.Placemark(moscow, {
+          hintContent: 'Москва / Московская область',
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/svg/placemark-moscow.svg',
+          // Размеры метки.
+          iconImageSize: [30, 30],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -42],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkVladimir = new ymaps.Placemark(vladimir, {
+          hintContent: 'Владимир / Владимирская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-vladimir.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-17, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkIvanovo = new ymaps.Placemark(ivanovo, {
+          hintContent: 'Иваново / Ивановская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-ivanovo.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-17, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkKaluga = new ymaps.Placemark(kaluga, {
+          hintContent: 'Калуга / Калужская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-kaluga.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-12, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkRyazan = new ymaps.Placemark(ryazan, {
+          hintContent: 'Рязань / Рязанская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-ryazan.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-14, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkTver = new ymaps.Placemark(tver, {
+          hintContent: 'Тверь / Тверская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-tver.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-14, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkTula = new ymaps.Placemark(tula, {
+          hintContent: 'Тула / Тульская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-tula.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-15, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+      placemarkYaroslavl = new ymaps.Placemark(yaroslavl, {
+          hintContent: 'Ярославль / Ярославская область',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-yaroslavl.svg',
+          iconImageSize: [30, 30],
+          iconImageOffset: [-14, -28],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+    map.controls.remove('rulerControl'); // удаляем контрол правил
+    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+    map.geoObjects
+      .add(placemarkMoscow)
+      .add(placemarkVladimir)
+      .add(placemarkIvanovo)
+      .add(placemarkKaluga)
+      .add(placemarkRyazan)
+      .add(placemarkTver)
+      .add(placemarkTula)
+      .add(placemarkYaroslavl);
+
+}
+
+ymaps.ready(init);
+
+
+  </script>
+
+
 </body>
 </html>
