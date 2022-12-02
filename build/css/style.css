@@ -4548,6 +4548,13 @@ button,
   background-image: url(../img/bg/btn-arrow.svg);
   background-repeat: no-repeat; }
 
+.awards {
+  height: 611px;
+  background-color: greenyellow; }
+
+.awards h2 {
+  margin: 0; }
+
 .footer {
   padding-top: 112px;
   padding-bottom: 32px;
