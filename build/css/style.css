@@ -4551,8 +4551,74 @@ button,
 .about-company-page {
   background-color: #FFF9F0; }
 
+.about-company-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 18px;
+  padding-bottom: 392px;
+  padding-right: 7.8%;
+  background-image: url(../img/bg/bg-about-company@1x.png);
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about-company-header {
+      background-image: url(../img/bg/bg-about-company@2x.png); } }
+
+@media screen and (max-width: 540px) {
+  .about-company-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 368px;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 375px) {
+  .about-company-header {
+    background-image: url(../img/bg/bg-about-company-mobile@1x.png); } }
+  @media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 375px) and (min-resolution: 144dpi), screen and (max-width: 375px) and (min-resolution: 1.5dppx) {
+    .about-company-header {
+      background-image: url(../img/bg/bg-about-company-mobile@2x.png); } }
+
+.about-company-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 483px; }
+
+@media screen and (max-width: 540px) {
+  .about-company-header__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 304px; } }
+
+.about-company-header img {
+  width: 200px;
+  height: 122px; }
+
+@media screen and (max-width: 540px) {
+  .about-company-header img {
+    width: 145px;
+    height: 88px; } }
+
 .about-company-header h1 {
   margin: 0;
+  margin-top: 51px;
+  margin-bottom: 30px;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
@@ -4561,6 +4627,8 @@ button,
 
 @media screen and (max-width: 540px) {
   .about-company-header h1 {
+    margin-top: 45px;
+    margin-bottom: 18px;
     font-size: 22px;
     line-height: 29px;
     text-align: center; } }
