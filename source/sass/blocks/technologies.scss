@@ -1,0 +1,33 @@
+.technologies {
+  background-color: #265113;
+}
+
+.technologies__text h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: 540px) {
+  .technologies__text h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+
+.technologies__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.technologies__text p strong {
+  font-weight: 600;
+}

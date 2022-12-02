@@ -1,0 +1,36 @@
+
+.gallery__wrapper p {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: 540px) {
+  .gallery__wrapper p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+
+.gallery__images,
+.gallery__image {
+  background-color: #111520;
+}
+
+.gallery__image p {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+
+}
+
+@media  screen and (max-width: 540px) {
+  .gallery__image p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,49 @@
+.production-cycle h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 61px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .production-cycle h2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+}
+
+
+.production-cycle__slider-wrapper {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.production-cycle__slider-wrapper h3 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .production-cycle h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.production-cycle__slider-wrapper p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}

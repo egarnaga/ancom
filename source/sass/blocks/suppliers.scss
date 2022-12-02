@@ -1,0 +1,36 @@
+.suppliers h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #000000;
+
+}
+
+@media  screen and (max-width: 540px) {
+  .suppliers h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.suppliers p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #1E1E1E;
+}
+
+.suppliers p strong {
+  font-weight: 600;
+}
+
+.suppliers__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

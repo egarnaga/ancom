@@ -1,0 +1,39 @@
+.excellence {
+  background-color: #FFFFFF;
+}
+
+.excellence__list span {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #DC0030;
+}
+
+@media  screen and (max-width: 540px) {
+  .excellence__list span {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+
+.excellence__list p {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .excellence__list p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+  }
+}
