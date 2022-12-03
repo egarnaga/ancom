@@ -7,6 +7,7 @@ import {navMenu} from './modules/nav-menu';
 import {franchiseOpeningSlider} from './modules/franchise-opening-slider';
 import {shopSlider} from './modules/shop-slider';
 import {reviewsSlider} from './modules/reviews-slider';
+import {productionCycleSlider} from './modules/production-cycle-slider';
 
 
 //import {franchiseMap} from './modules/franchise-map';
@@ -27,5 +28,6 @@ navMenu();
 franchiseOpeningSlider();
 shopSlider();
 reviewsSlider();
+productionCycleSlider();
 
 //franchiseMap();
