@@ -9,6 +9,7 @@ import {shopSlider} from './modules/shop-slider';
 import {reviewsSlider} from './modules/reviews-slider';
 import {productionCycleSlider} from './modules/production-cycle-slider';
 import {certificationSlider} from './modules/certification-slider';
+import {accordionFaq} from './modules/accordion-faq';
 
 
 //import {franchiseMap} from './modules/franchise-map';
@@ -31,5 +32,6 @@ shopSlider();
 reviewsSlider();
 productionCycleSlider();
 certificationSlider();
+accordionFaq();
 
 //franchiseMap();
