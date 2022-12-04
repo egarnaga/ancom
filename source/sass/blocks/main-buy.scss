@@ -1,0 +1,26 @@
+.main-buy__header h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-buy__header h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+
+.main-buy__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}

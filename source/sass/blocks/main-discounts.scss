@@ -1,0 +1,44 @@
+.main-discounts__wrapper {
+  margin: 0;
+  padding: 0;
+
+  list-style: 0;
+}
+
+.main-discounts__card h3 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-discounts__card h3 {
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+  }
+}
+
+.main-discounts__card p {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-discounts__card p {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+.main-discounts__card p span {
+  color: #DC0030;
+}

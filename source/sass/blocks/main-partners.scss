@@ -1,0 +1,36 @@
+.main-partners__wrapper {
+  background-color: #265113;
+}
+
+.main-partners__wrapper h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 61px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-partners__wrapper h2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+}
+
+.main-partners__wrapper p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.main-partners__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
