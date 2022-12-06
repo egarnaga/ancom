@@ -7221,12 +7221,82 @@ button,
 
 .buy-moscow {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-right: 116px;
+  -webkit-filter: drop-shadow(0px -16px 134px rgba(49, 29, 10, 0.11));
+          filter: drop-shadow(0px -16px 134px rgba(49, 29, 10, 0.11));
   -webkit-box-shadow: 0px -16px 134px rgba(49, 29, 10, 0.11);
           box-shadow: 0px -16px 134px rgba(49, 29, 10, 0.11);
   z-index: 2000; }
 
+@media screen and (max-width: 1360px) {
+  .buy-moscow {
+    padding-right: 60px; } }
+
+@media screen and (max-width: 1060px) {
+  .buy-moscow {
+    padding-right: 30px; } }
+
+@media screen and (max-width: 1020px) {
+  .buy-moscow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px; } }
+
+@media screen and (max-width: 1020px) {
+  .buy-moscow {
+    padding-top: 25px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+.buy-moscow__img {
+  width: 597px;
+  max-width: 597px;
+  padding-top: 69px;
+  padding-left: 81px;
+  background-image: url(../img/bg/bg-buy-moscow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: drop-shadow(0px 121px 49px rgba(182, 128, 12, 0.02)) drop-shadow(0px 68px 41px rgba(182, 128, 12, 0.07)) drop-shadow(0px 30px 30px rgba(182, 128, 12, 0.11)) drop-shadow(0px 8px 17px rgba(182, 128, 12, 0.13)) drop-shadow(0px 0px 0px rgba(182, 128, 12, 0.13));
+          filter: drop-shadow(0px 121px 49px rgba(182, 128, 12, 0.02)) drop-shadow(0px 68px 41px rgba(182, 128, 12, 0.07)) drop-shadow(0px 30px 30px rgba(182, 128, 12, 0.11)) drop-shadow(0px 8px 17px rgba(182, 128, 12, 0.13)) drop-shadow(0px 0px 0px rgba(182, 128, 12, 0.13));
+  border-radius: 0px 5px 5px 0px; }
+
+@media screen and (max-width: 1020px) {
+  .buy-moscow__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media screen and (max-width: 700px) {
+  .buy-moscow__img {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 540px) {
+  .buy-moscow__img {
+    padding-top: 34px;
+    padding-top: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url(../img/bg/bg-buy-moscow-mobile.svg); } }
+
 .buy-moscow__img p {
+  max-width: 199px;
   margin: 0;
+  margin-bottom: 40px;
   font-weight: 600;
   font-size: 26px;
   line-height: 34px;
@@ -7237,15 +7307,80 @@ button,
     font-size: 16px;
     line-height: 21px; } }
 
+@media screen and (max-width: 400px) {
+  .buy-moscow__img p {
+    max-width: 100%;
+    margin-bottom: 22px; } }
+
+.buy-moscow__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 209px; }
+
+@media screen and (max-width: 1020px) {
+  .buy-moscow__btn {
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 400px) {
+  .buy-moscow__btn {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .buy-moscow__btn a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.buy-moscow__btn span {
+  padding-left: 47px; }
+
+@media screen and (max-width: 400px) {
+  .buy-moscow__btn span {
+    padding-left: 0; } }
+
+.buy-moscow__text {
+  width: 599px;
+  max-width: 599px;
+  margin-left: 30px; }
+
+@media screen and (max-width: 1020px) {
+  .buy-moscow__text {
+    margin-left: 0;
+    margin-bottom: 77px; } }
+
+@media screen and (max-width: 700px) {
+  .buy-moscow__text {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 540px) {
+  .buy-moscow__text {
+    margin-bottom: 53px; } }
+
 .buy-moscow__text h2 {
   margin: 0;
+  margin-bottom: 30px;
   font-weight: 600;
   font-size: 55px;
   line-height: 61px;
   color: #1E1E1E; }
 
+@media screen and (max-width: 1090px) {
+  .buy-moscow__text h2 {
+    font-size: 45px;
+    line-height: 51x; } }
+
 @media screen and (max-width: 540px) {
   .buy-moscow__text h2 {
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 29px; } }
 
@@ -7253,18 +7388,60 @@ button,
   color: #DC0030; }
 
 .buy-moscow__text p {
+  max-width: 470px;
   margin: 0;
+  margin-bottom: 77px;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.2px;
   color: #1E1E1E; }
 
+@media screen and (max-width: 540px) {
+  .buy-moscow__text p {
+    margin-bottom: 36px; } }
+
+.buy-moscow__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .buy-moscow__wrapper ul {
   margin: 0;
   padding: 0;
+  margin-right: -19px;
+  margin-bottom: -19px;
   list-style: none; }
 
+@media screen and (max-width: 540px) {
+  .buy-moscow__wrapper ul {
+    margin-right: -12px;
+    margin-bottom: -12px; } }
+
 .buy-moscow__wrapper ul li {
+  position: relative;
+  margin-right: 19px;
+  margin-bottom: 19px;
+  padding-left: 30px; }
+
+@media screen and (max-width: 540px) {
+  .buy-moscow__wrapper ul li {
+    margin-right: 12px;
+    margin-bottom: 12px; } }
+
+.buy-moscow__wrapper ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/svg/placemark-moscow.svg);
+  background-repeat: no-repeat; }
+
+.buy-moscow__wrapper ul li span {
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
@@ -7272,7 +7449,7 @@ button,
   opacity: 0.7; }
 
 @media screen and (max-width: 540px) {
-  .buy-moscow__wrapper ul li {
+  .buy-moscow__wrapper ul li span {
     font-size: 12px;
     line-height: 16px; } }
 
