@@ -420,6 +420,10 @@
   background-color: #DC0030;
 }
 
+.main-catalog__list-item--catalog:hover {
+  background-color: #B20027;
+}
+
 @media  screen and (max-width: 700px) {
   .main-catalog__list-item--catalog {
     display: none;
