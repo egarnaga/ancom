@@ -432,5 +432,23 @@
 }
 
 .main-catalog__list-item--catalog h3 {
+  position: relative;
+  padding-right: 30px;
+
   color: #FFFFFF;
+}
+
+.main-catalog__list-item--catalog h3::before {
+  content: "";
+
+  position: absolute;
+
+  right: -17px;
+  bottom: -12px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../img/bg/btn-arrow.svg);
+  background-repeat: no-repeat;
 }
