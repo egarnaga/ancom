@@ -1,0 +1,40 @@
+.buy-russia__text h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 61px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .buy-russia__text h2 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.buy-russia__text h2 span {
+  color: #DC0030;
+}
+
+.buy-russia__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}
+
+.buy-russia__text p strong {
+  font-weight: 600;
+}
+
+
+.buy-russia ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
