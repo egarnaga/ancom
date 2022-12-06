@@ -6889,7 +6889,9 @@ button,
   background-image: url(../img/bg/bg-buy-saint-petersburg.svg);
   background-position: bottom center;
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 76px 54px rgba(82, 56, 17, 0.05);
+          box-shadow: 0px 76px 54px rgba(82, 56, 17, 0.05); }
 
 @media screen and (max-width: 1000px) {
   .buy-saint-petersburg {
@@ -6931,7 +6933,8 @@ button,
   width: 59px;
   height: 57px;
   background-image: url(../img/bg/flower-9.svg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 1000; }
 
 @media screen and (max-width: 540px) {
   .buy-saint-petersburg::before {
@@ -7162,8 +7165,65 @@ button,
   outline: none;
   border: 1.5px solid #1E1E1E; }
 
+.buy-map__wrapper {
+  position: relative; }
+
+.buy-map__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg/bg-buy-map.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 6000; }
+
+@media screen and (max-width: 540px) {
+  .buy-map__wrapper::before {
+    background-image: none; } }
+
+.buy-map__map {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  z-index: 10; }
+
+@media screen and (max-width: 540px) {
+  .buy-map__map {
+    height: 500px; } }
+
+.buy-map__map::before {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: -25px;
+  width: 74px;
+  height: 70px;
+  background-image: url(../img/bg/flower-10.svg);
+  background-repeat: no-repeat;
+  z-index: 4000; }
+
+@media screen and (max-width: 1126px) {
+  .buy-map__map::before {
+    left: 7%; } }
+
+@media screen and (max-width: 920px) {
+  .buy-map__map::before {
+    background-image: none; } }
+
+[class*="copyrights-pane"] {
+  display: none !important; }
+
+.buy-map [class*="ground-pane"] {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%); }
+
 .buy-moscow {
-  background-color: greenyellow; }
+  position: relative;
+  -webkit-box-shadow: 0px -16px 134px rgba(49, 29, 10, 0.11);
+          box-shadow: 0px -16px 134px rgba(49, 29, 10, 0.11);
+  z-index: 2000; }
 
 .buy-moscow__img p {
   margin: 0;
