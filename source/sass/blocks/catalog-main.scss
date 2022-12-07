@@ -1,0 +1,102 @@
+.catalog-main__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-main__item {
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.catalog-main__item span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1E1E1E;
+}
+
+.catalog-main__item--active {
+  background-color: #DC0030;
+}
+
+.catalog-main__item--active span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+.catalog-main__list-cards {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-main__list-cards h3 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-main__list-cards h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.catalog-main__list-cards dt {
+  margin: 0;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+
+.catalog-main__list-cards dd {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+
+.catalog-main__text h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-main__text h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.catalog-main__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height:19px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}

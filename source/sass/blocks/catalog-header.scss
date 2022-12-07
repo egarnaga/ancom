@@ -1,0 +1,256 @@
+.catalog-header__wrapper h1 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 83px;
+  letter-spacing: -1px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-header__wrapper h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+
+
+
+
+
+.catalog-header__wrapper object {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+
+  background-color: #DC0030;
+  border-radius: 100%;
+}
+
+@media  screen and (max-width: 1165px) {
+  .catalog-header__wrapper object {
+    margin-top: 55px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-header__wrapper object {
+    margin-top: 25px;
+
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.catalog-header__wrapper object span {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-header__wrapper object span {
+    font-size: 9px;
+    line-height: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.catalog-header__buttons-wrap {
+  display: none;
+  position: relative;
+  min-width: 165px;
+  margin-left: auto;
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-header__buttons-wrap  {
+    display: flex;
+    width: 100vw;
+    background: url(../img/bg/twig-3.svg) 11px 29px/65px 86px no-repeat,
+                url(../img/bg/twig-4.svg) top 22px right 17px/31px 94px no-repeat;
+    background-color: #FFF9F0;
+  }
+}
+
+.catalog-header__button {
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-left: auto;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-header__button  {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 78px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+
+    cursor: auto;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-header__button  {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.catalog-header__button:hover {
+  color: #DC0030;
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-header__button:hover  {
+    color: #1E1E1E;
+  }
+}
+
+.catalog-header__button span {
+  margin-right: 12px;
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-header__button span  {
+    margin-right: 0;
+  }
+}
+
+.catalog-header__button svg {
+  margin-bottom: 4px;
+  fill: transparent;
+  stroke: #1E1E1E;
+}
+
+@media  screen and (max-width: 768px) {
+  .catalog-header__button svg  {
+    display: none;
+  }
+}
+
+.catalog-header__button--opened svg {
+  stroke: #DC0030;
+  transform: rotate(180deg);
+}
+
+.catalog-header__button:hover svg {
+  stroke: #DC0030;
+}
+
+.catalog-header__button--closed {
+  color: #1E1E1E;
+}
+
+.catalog-header__button--opened {
+  color: #DC0030;
+}
+
+
+
+
+
+.catalog-header__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  position: absolute;
+
+  top: 43px;
+  right: -5px;
+
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+
+  background-color: #FFFFFF;
+
+  box-shadow: 0px 20px 12px rgba(71, 53, 21, 0.02), 0px 9px 9px rgba(71, 53, 21, 0.03), 0px 2px 5px rgba(71, 53, 21, 0.03), 0px 0px 0px rgba(71, 53, 21, 0.03);
+  border-radius: 5px;
+  z-index: 5000;
+}
+
+.catalog-header__list--opened {
+  display: flex;
+}
+
+.catalog-header__list--closed {
+  display: none;
+}
+
+.catalog-header__list button {
+  position: relative;
+
+  display: flex;
+
+  min-width: 245px;
+
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  line-height: 17px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.catalog-header__list button:hover {
+  color: #DC0030;
+}
+
+.catalog-header__list button:active {
+  font-weight: 600;
+  color: #DC0030;
+}
+
+.catalog-header__item--active {
+  font-weight: 600;
+  color: #DC0030;
+}
+
+.catalog-header__item--active::before {
+  content: "";
+  position: absolute;
+
+  top: 5px;
+
+  right: 2px;
+
+  width: 13px;
+  height: 9px;
+
+  background-image: url(../img/bg/selected.svg);
+}
