@@ -1,0 +1,64 @@
+.buy-wrapper {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 159px;
+  padding-left: 137px;
+  padding-right: 137px;
+
+  background-image: url(../img/bg/bg-buy-wrapper.svg);
+  background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 1310px) {
+  .buy-wrapper {
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media  screen and (max-width: 700px) {
+  .buy-wrapper {
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .buy-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url(../img/bg/bg-buy-wrapper-mobile.svg);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.buy-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  left: 125px;
+  bottom: -100px;
+
+  width: 104px;
+  height: 313px;
+
+  background-image: url(../img/bg/twig-12.svg);
+  background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 540px) {
+  .buy-wrapper::before {
+    left: 0;
+    bottom: -20px;
+
+    width: 42px;
+    height: 208px;
+
+    background-image: url(../img/bg/twig-13.svg);
+  }
+}

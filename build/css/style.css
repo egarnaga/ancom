@@ -7453,15 +7453,107 @@ button,
     font-size: 12px;
     line-height: 16px; } }
 
+.buy-wrapper {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 159px;
+  padding-left: 137px;
+  padding-right: 137px;
+  background-image: url(../img/bg/bg-buy-wrapper.svg);
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 1310px) {
+  .buy-wrapper {
+    padding-left: 60px;
+    padding-right: 60px; } }
+
+@media screen and (max-width: 700px) {
+  .buy-wrapper {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 540px) {
+  .buy-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/bg/bg-buy-wrapper-mobile.svg);
+    background-position: center center;
+    background-size: cover; } }
+
+.buy-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 125px;
+  bottom: -100px;
+  width: 104px;
+  height: 313px;
+  background-image: url(../img/bg/twig-12.svg);
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 540px) {
+  .buy-wrapper::before {
+    left: 0;
+    bottom: -20px;
+    width: 42px;
+    height: 208px;
+    background-image: url(../img/bg/twig-13.svg); } }
+
+.buy-russia {
+  margin-bottom: 150px; }
+
+@media screen and (max-width: 1150px) {
+  .buy-russia {
+    margin-bottom: 75px; } }
+
+@media screen and (max-width: 540px) {
+  .buy-russia {
+    margin-bottom: 101px; } }
+
+.buy-russia__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px; }
+
+@media screen and (max-width: 900px) {
+  .buy-russia__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+
+@media screen and (max-width: 540px) {
+  .buy-russia__text {
+    margin-bottom: 14px; } }
+
 .buy-russia__text h2 {
   margin: 0;
+  max-width: 473px;
+  margin-right: 115px;
   font-weight: 600;
   font-size: 55px;
   line-height: 61px;
   color: #1E1E1E; }
 
+@media screen and (max-width: 1090px) {
+  .buy-russia__text h2 {
+    font-size: 45px;
+    line-height: 51px; } }
+
+@media screen and (max-width: 900px) {
+  .buy-russia__text h2 {
+    margin-bottom: 30px;
+    margin-right: 0; } }
+
 @media screen and (max-width: 540px) {
   .buy-russia__text h2 {
+    margin-bottom: 15px;
     font-size: 22px;
     line-height: 29px; } }
 
@@ -7470,6 +7562,7 @@ button,
 
 .buy-russia__text p {
   margin: 0;
+  max-width: 442px;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.2px;
@@ -7479,19 +7572,89 @@ button,
   font-weight: 600; }
 
 .buy-russia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-right: -11px;
   list-style: none; }
+
+@media screen and (max-width: 400px) {
+  .buy-russia ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+    margin-bottom: -15px; } }
+
+.buy-russia ul li {
+  margin-right: 11px;
+  background-color: #92D660; }
+
+@media screen and (max-width: 400px) {
+  .buy-russia ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .buy-russia ul li img {
+    height: 120px; } }
+
+.buy-internet__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px; }
+
+@media screen and (max-width: 900px) {
+  .buy-internet__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+
+@media screen and (max-width: 540px) {
+  .buy-internet__text {
+    margin-bottom: 30px; } }
 
 .buy-internet__text h2 {
   margin: 0;
+  width: 541px;
+  max-width: 541px;
+  margin-right: 47px;
   font-weight: 600;
   font-size: 55px;
   line-height: 61px;
   color: #1E1E1E; }
 
+@media screen and (max-width: 1090px) {
+  .buy-internet__text h2 {
+    font-size: 45px;
+    line-height: 51px; } }
+
+@media screen and (max-width: 900px) {
+  .buy-internet__text h2 {
+    margin-bottom: 30px;
+    margin-right: 0; } }
+
 @media screen and (max-width: 540px) {
   .buy-internet__text h2 {
+    margin-bottom: 15px;
     font-size: 22px;
     line-height: 29px; } }
 
@@ -7500,6 +7663,7 @@ button,
 
 .buy-internet__text p {
   margin: 0;
+  max-width: 419px;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.2px;
@@ -7509,9 +7673,42 @@ button,
   font-weight: 600; }
 
 .buy-internet ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-right: -11px;
   list-style: none; }
+
+@media screen and (max-width: 400px) {
+  .buy-internet ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+    margin-bottom: -15px; } }
+
+.buy-internet ul li {
+  margin-right: 11px;
+  background-color: #265113; }
+
+@media screen and (max-width: 400px) {
+  .buy-internet ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .buy-internet ul li img {
+    height: 120px; } }
 
 .footer {
   padding-top: 112px;
