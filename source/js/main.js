@@ -12,6 +12,8 @@ import {certificationSlider} from './modules/certification-slider';
 import {accordionFaq} from './modules/accordion-faq';
 import {discountsSlider} from './modules/discounts-slider';
 
+import {catalogDropdown} from './modules/catalog-dropdown';
+
 //import {franchiseMap} from './modules/franchise-map';
 
 
@@ -34,4 +36,5 @@ productionCycleSlider();
 certificationSlider();
 accordionFaq();
 discountsSlider();
+catalogDropdown();
 //franchiseMap();
