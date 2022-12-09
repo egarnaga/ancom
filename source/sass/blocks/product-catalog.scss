@@ -1,0 +1,15 @@
+.product-catalog__wrapper h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 61px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .product-catalog__wrapper h2 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}

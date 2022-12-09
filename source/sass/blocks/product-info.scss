@@ -1,0 +1,117 @@
+.product-info__text h1 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 61px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .product-info__text h1 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+}
+
+.product-info__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}
+
+.product-info__features dl dt {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+
+.product-info__features dl dd {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .product-info__features dl dd {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.product-info__composition h3 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+
+.product-info__composition ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-info__composition ul li span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .product-info__composition ul li span {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.product-info__awards h3 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+
+.product-info__awards ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-info__awards ul li h4 {
+  margin: 0;
+
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1E1E1E;
+}
+
+@media  screen and (max-width: 540px) {
+  .product-info__awards ul li h4 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.product-info__awards ul li p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E1E1E;
+  opacity: 0.5;
+}

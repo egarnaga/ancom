@@ -1,0 +1,14 @@
+.product-header span {
+  font-weight: 450;
+  font-size: 28px;
+  line-height: 34px;
+  color: #1E1E1E;
+}
+
+
+@media  screen and (max-width: 540px) {
+  .product-header span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
