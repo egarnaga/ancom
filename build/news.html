@@ -26,7 +26,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>Контакты</title>
+  <title>Новости</title>
 
 </head>
 <body>
@@ -39,8 +39,7 @@
 </symbol></svg>
   </div>
 
-  <div class="wrapper contacts-page">
-
+  <div class="wrapper news-page">
     <header class="header container ">
   <div class="header__wrapper">
     <a class="header__logo"  href="main.html" aria-label="Переход на главную">
@@ -75,10 +74,10 @@
             <a class="main-nav__link "  href="franchise.html" >Франшиза</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link "  href="news.html" >Новости</a>
+            <a class="main-nav__link  main-nav__link--active " >Новости</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--active " >Контакты</a>
+            <a class="main-nav__link "  href="contacts.html" >Контакты</a>
           </li>
         </ul>
 
@@ -116,159 +115,6 @@
     <main>
       <div class="container">
 
-        <section class="contacts">
-          <div class="contacts__header">
-            <h1>Контакты</h1>
-          </div>
-
-          <div class="contacts__wrapper">
-            <div class="contacts__address">
-              <h2>Адрес</h2>
-
-              <p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p>
-            </div>
-            <div class="contacts__emails">
-              <h2>Электронная почта</h2>
-
-              <ul>
-                <li>
-                  <h3>Служебные обращения и вопросы поставок</h3>
-                  <a href="mailto:info@ancom.spb.ru">info@ancom.spb.ru</a>
-                </li>
-                <li>
-                  <h3>Маркетинг и PR</h3>
-                  <a href="mailto:marketing@ancom.spb.ru">marketing@ancom.spb.ru</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contacts__wrap">
-            <div class="contacts__phone">
-              <h2>Телефон</h2>
-
-              <div>
-                <p>По будням с 9:00 до 18:00</p>
-                <a href="tel:+78126774588">8 (812) 677 45 88</a>
-              </div>
-            </div>
-            <div class="contacts__departments">
-              <h2>В тональном режиме наберите внутренний номер</h2>
-
-              <dl>
-                <div>
-                  <dt>
-                    <strong>130</strong>
-                  </dt>
-                  <dd>Ежедневные отгрузки по Санкт-Петербургу и ЛО, прямые поставки в регионы</dd>
-                </div>
-                <div>
-                  <dt>
-                    <strong>180</strong>
-                  </dt>
-                  <dd>Логистика</dd>
-                </div>
-                <div>
-                  <dt>
-                    <strong>124</strong>
-                  </dt>
-                  <dd>Бухгалтерия</dd>
-                </div>
-                <div>
-                  <dt>
-                    <strong>144</strong>
-                  </dt>
-                  <dd>Снабжение</dd>
-                </div>
-                <div>
-                  <dt>
-                    <strong>239</strong>
-                  </dt>
-                  <dd>Маркетинг и PR</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-        </section>
-
-        <section class="contacts-form">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <div class="contacts-form__img">
-          </div>
-
-          <form class="contacts-form__form" action="#" method="POST">
-            <p>Пожелания и предложения</p>
-
-            <div class="contacts-form__field">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" name="name" id="name" placeholder="Имя" required>
-              <span>Error text</span>
-            </div>
-
-            <div class="contacts-form__wrapper">
-              <div class="contacts-form__field contacts-form__field-phone">
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                <span>Error text</span>
-              </div>
-
-              <div class="contacts-form__field contacts-form__field-email">
-                <label class="visually-hidden" for="e-mail">Почта</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="Почта" required>
-                <span>Error text</span>
-              </div>
-            </div>
-
-            <div class="contacts-form__wrap">
-              <h3>Тема обращения</h3>
-
-              <div class="contacts-form__radio-wrap">
-                <div class="contacts-form__radio">
-                  <input type="radio" id="logistics" name="contact" value="1">
-                  <label for="logistics">логистика</label>
-                </div>
-
-                <div class="contacts-form__radio">
-                  <input type="radio" id="wholesale" name="contact" value="2">
-                  <label for="wholesale">оптово-розничная торговля</label>
-                </div>
-
-                <div class="contacts-form__radio">
-                  <input type="radio" id="quality" name="contact" value="3">
-                  <label for="quality">отзывы по качеству продукции</label>
-                </div>
-              </div>
-
-              <div class="contacts-form__textarea">
-                <label class="visually-hidden" for="message">Напишите Ваше обращение</label>
-                <textarea name="message" id="message" placeholder="Чем мы можем вам помочь?" required></textarea>
-              </div>
-
-              <div class="contacts-form__file-wrap">
-                <div class="contacts-form__photo">
-                  <label for="foto">Приложить фотографию продукции</label>
-                  <input type="file" name="foto" id="foto">
-                </div>
-
-                <div class="contacts-form__doc">
-                  <label for="doc">Приложить документ</label>
-                  <input type="file" name="doc" id="doc">
-                </div>
-              </div>
-
-            </div>
-
-            <div class="contacts-form__btn">
-              <button class="btn-submit" type="submit" aria-label="Отправить">
-                <span>Отправить</span>
-              </button>
-            </div>
-
-            <div class="contacts-form__consent">
-              <span>Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой приватности</a>.</span>
-            </div>
-          </form>
-        </section>
       </div>
     </main>
 
@@ -332,5 +178,6 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
 </body>
 </html>
