@@ -159,11 +159,10 @@
 
   margin-right: 0.4%;
 
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 26px;
-  padding-right: 26px;
+
 }
+
+
 
 @media  screen and (max-width: 1125px) {
   .catalog-product__wrapper ul li {
@@ -329,6 +328,23 @@
   background-image: url(../img/bg/product-15-desktop@1x.svg);
 }
 
+
+
+
+.catalog-product__item a {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+
 .catalog-product__wrapper span {
   font-weight: 600;
   font-size: 14px;
@@ -347,7 +363,7 @@
   height: 100%;
 }
 
-.catalog-product__item--8 a {
+.catalog-product__item--8 div a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,25 +373,25 @@
   padding-right: 0;
 }
 
-.catalog-product__item--8 a span {
+.catalog-product__item--8 div a span {
   font-size: 22px;
   line-height: 29px;
 }
 
 @media  screen and (max-width: 1125px) {
-  .catalog-product__item--8 a span {
+  .catalog-product__item--8 div a span {
     font-size: 14px;
     line-height: 17px;
   }
 }
 
-.catalog-product__item--8 a span::after {
-  top: 5px;
+.catalog-product__item--8 div a span::after {
+  top: 8px;
 }
 
 @media  screen and (max-width: 1125px) {
-  .catalog-product__item--8 a span::after {
-    top: 1px;
+  .catalog-product__item--8 div a span::after {
+    top: 2px;
     right: 13px;
   }
 }
