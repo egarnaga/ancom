@@ -98,6 +98,7 @@
 }
 
 .catalog-main__card {
+  position: relative;
   width: 33.333333%;
   height: 490px;
   max-height: 490px;
@@ -379,9 +380,6 @@
 }
 
 .catalog-main__card-back {
-  position: relative;
-  display: none;   //
-  //display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
@@ -393,8 +391,43 @@
   background-color: #FFFFFF;
   box-shadow: 33px 63px 42px rgba(49, 32, 7, 0.02), 14px 28px 31px rgba(49, 32, 7, 0.03), 4px 7px 17px rgba(49, 32, 7, 0.03), 0px 0px 0px rgba(49, 32, 7, 0.03);
   border-radius: 0 0 24px 24px;
-  //z-index: 5000;
+
+  position: absolute;
+  width: 94%;
+  transition: transform 0.3s ease;
+  transform: translateY(-100%);
 }
+
+.catalog-main__card:hover .catalog-main__card-front {
+  position: relative;
+  z-index: 6000;
+}
+
+.catalog-main__card:hover .catalog-main__card-back {
+  transform: translateY(0);
+  z-index: 5000;
+}
+
+
+@media  screen and (max-width: 1175px) {
+  .catalog-main__card-back {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .catalog-main__card-back {
+    display: none;
+  }
+}
+
+
+
+
+
 
 .catalog-main__card-back dl {
   margin-bottom: -9px;
@@ -430,6 +463,7 @@
 .catalog-main__btn {
   display: flex;
   margin-top: 29px;
+
 }
 
 .catalog-main__btn .btn-submit {
@@ -439,6 +473,7 @@
   background-color: #FFFFFF;
 
   border: 1.5px solid #DC0030;
+  overflow: hidden;
 }
 
 .catalog-main__btn .btn-submit span {
@@ -452,6 +487,12 @@
 .catalog-main__btn .btn-submit:hover {
   background-color: #FFD9E1;
 }
+
+.catalog-main__btn .btn-submit span {
+  white-space: nowrap
+}
+
+
 
 
 
