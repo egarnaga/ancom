@@ -1,0 +1,24 @@
+.balloon p {
+  margin: 0;
+
+  font-family: "Avenir Next Cyr", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1E1E1E;
+  white-space: nowrap;
+}
+
+.franchise-map [class*="balloon__content"] {
+  padding-top: 20px !important;
+  padding-left: 20px !important;
+
+}
+
+
+@media  screen and (max-width: 920px) {
+  .franchise-map [class*="balloon__content"] {
+    padding-top: 17px !important;
+    padding-left: 20px !important;
+  }
+}

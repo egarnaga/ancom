@@ -922,7 +922,11 @@
 
 
       placemarkMoscow = new ymaps.Placemark(moscow, {
-          hintContent: 'Москва / Московская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Москва / Московская область</p>
+                            </div>
+                          `
       }, {
           // Опции.
           // Необходимо указать данный тип макета.
@@ -941,7 +945,11 @@
       });
 
       placemarkVladimir = new ymaps.Placemark(vladimir, {
-          hintContent: 'Владимир / Владимирская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Владимир / Владимирская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-vladimir.svg',
@@ -952,7 +960,11 @@
       });
 
       placemarkIvanovo = new ymaps.Placemark(ivanovo, {
-          hintContent: 'Иваново / Ивановская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Иваново / Ивановская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-ivanovo.svg',
@@ -963,7 +975,11 @@
       });
 
       placemarkKaluga = new ymaps.Placemark(kaluga, {
-          hintContent: 'Калуга / Калужская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Калуга / Калужская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-kaluga.svg',
@@ -974,7 +990,11 @@
       });
 
       placemarkRyazan = new ymaps.Placemark(ryazan, {
-          hintContent: 'Рязань / Рязанская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Рязань / Рязанская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-ryazan.svg',
@@ -985,7 +1005,11 @@
       });
 
       placemarkTver = new ymaps.Placemark(tver, {
-          hintContent: 'Тверь / Тверская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Тверь / Тверская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-tver.svg',
@@ -996,7 +1020,11 @@
       });
 
       placemarkTula = new ymaps.Placemark(tula, {
-          hintContent: 'Тула / Тульская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Тула / Тульская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-tula.svg',
@@ -1007,7 +1035,11 @@
       });
 
       placemarkYaroslavl = new ymaps.Placemark(yaroslavl, {
-          hintContent: 'Ярославль / Ярославская область',
+          balloonContent: `
+                            <div class="balloon">
+                              <p>Ярославль / Ярославская область</p>
+                            </div>
+                          `
       }, {
           iconLayout: 'default#imageWithContent',
           iconImageHref: 'img/svg/placemark-yaroslavl.svg',
