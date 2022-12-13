@@ -1,19 +1,37 @@
 .main-animation {
   position: relative;
-  //padding-bottom: 782px;
 
-
-
-  //width: 1440px;
-  //max-width: 1440px;
 
   height: 854px;
   max-height: 854px;
-
-
-
-  //min-height: 854px;
 }
+
+@media  screen and (max-width: 1250px) {
+  .main-animation {
+    height: 754px;
+    max-height: 754px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .main-animation {
+    height: 554px;
+    max-height: 554px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation {
+    height: auto;
+    max-height: none;
+
+    background-image: url(../img/bg/bg-main-animation.svg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 
 .main-animation .header {
   position: relative;
@@ -22,12 +40,9 @@
 }
 
 .main-animation .main-animation__sky {
-  //display: flex;
   position: absolute;
 
   top: 0;
-
-
 
   width: 100%;
   height: 100%;
@@ -36,6 +51,13 @@
 
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation .main-animation__sky {
+    display: none;
+  }
+}
+
+
 
 .main-animation__third-plan {
 
@@ -43,20 +65,19 @@
 
   bottom: -50px;
 
-  //bottom: -100px;
-  //right: 0;
-  //left: 0;
-  //right: 0;
-
-  //width: 84.8%;
-  //width: 100%;
   height: auto;
 
   z-index: 3;
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation__third-plan {
+    display: none;
+  }
+}
+
+
 .main-animation__second-plan {
-  //display: none;
 
   position: absolute;
 
@@ -68,8 +89,13 @@
   z-index: 4;
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation__second-plan {
+    display: none;
+  }
+}
+
 .main-animation__first-plan {
-  //display: none;
 
   position: absolute;
 
@@ -82,21 +108,68 @@
   z-index: 5;
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation__first-plan {
+    display: none;
+  }
+}
+
 .main-animation__wrapper {
   position: absolute;
 
   left: 9.5%;
-  //bottom: -445px;
 
   transform: translateY(500px);
 
   z-index: 2;
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation__wrapper {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 244px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    left: 0;
+
+    transform: translateY(0);
+  }
+}
+
+
+.main-animation__wrapper--active {
+  z-index: 50;
+}
+
 .main-animation__text img {
   width: 278px;
   height: 169px;
 }
+
+@media  screen and (max-width: 1250px) {
+  .main-animation__text img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .main-animation__text img {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation__text img {
+    width: 167px;
+    height: 102px;
+  }
+}
+
+
 
 .main-animation__text h1 {
   margin: 0;
@@ -112,6 +185,32 @@
 
 }
 
+@media  screen and (max-width: 1250px) {
+  .main-animation__text h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .main-animation__text h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: normal;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation__text h1 {
+    max-width: 278px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
 .main-animation__text p {
   margin: 0;
   max-width: 460px;
@@ -123,6 +222,19 @@
   color: #1E1E1E;
 }
 
+@media  screen and (max-width: 1250px) {
+  .main-animation__text p {
+    margin-bottom: 20px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation__text p {
+    max-width: 287px;
+    margin-bottom: 35px;
+  }
+}
+
 .main-animation__text-btn {
   display: flex;
   max-width: 196px;
@@ -130,17 +242,7 @@
 
 .body-lock {
   position: fixed;
-  //overflow-y: scroll;
-  //overflow: hidden;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -160,6 +262,14 @@
   z-index: 6;
 }
 
+@media  screen and (max-width: 540px) {
+  .main-animation__btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
 .main-animation__btn button {
 
 
@@ -177,6 +287,13 @@
   border: 1.5px solid #FFFFFF;
 
   z-index: 6;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation__btn button {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 
@@ -199,6 +316,13 @@
 
   background-image: url(../img/svg/arrow-bottom.svg);
   background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 540px) {
+  .main-animation__btn button::before {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .main-animation__btn button:disabled {
