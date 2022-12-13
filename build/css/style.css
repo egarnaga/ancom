@@ -6224,23 +6224,6 @@ button,
 .main-animation__btn button:disabled:hover {
   border: 1.5px solid #E3D3D3; }
 
-.main-header {
-  min-height: 770px;
-  background-color: greenyellow; }
-
-.main-header h1 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  color: #1E1E1E; }
-
-@media screen and (max-width: 540px) {
-  .main-header h1 {
-    font-size: 22px;
-    line-height: 29px; } }
-
 .main-discounts {
   position: relative;
   padding-top: 76px;
