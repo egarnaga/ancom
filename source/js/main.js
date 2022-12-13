@@ -14,6 +14,7 @@ import {discountsSlider} from './modules/discounts-slider';
 
 import {catalogDropdown} from './modules/catalog-dropdown';
 import {animationMain} from './modules/animation-main';
+import {btnClose} from './modules/cookie-close-btn';
 
 
 
@@ -40,3 +41,4 @@ accordionFaq();
 discountsSlider();
 catalogDropdown();
 animationMain();
+btnClose();

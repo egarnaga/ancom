@@ -7,6 +7,7 @@ const animationMain = () => {
     const button = document.querySelector('.button');
     const body = document.querySelector('body');
     const wrapper = document.querySelector('.main-animation__wrapper');
+    const cookie = document.querySelector('.cookie');
 
     function removeLock() {
           body.classList.remove('body-lock');
@@ -14,6 +15,10 @@ const animationMain = () => {
 
     function addClass() {
       wrapper.classList.add('main-animation__wrapper--active');
+    }
+
+    function showCookie() {
+      cookie.classList.add('cookie--active');
     }
 
     if (window.innerWidth >= 541) {
@@ -46,6 +51,7 @@ const animationMain = () => {
 
         setTimeout(removeLock, 4000);
         setTimeout(addClass, 4000);
+        setTimeout(showCookie, 7000);
 
       }
 
@@ -73,10 +79,12 @@ const animationMain = () => {
 
         setTimeout(removeLock, 4000);
         setTimeout(addClass, 4000);
+        setTimeout(showCookie, 7000);
 
       }
     } else {
       removeLock();
+      setTimeout(showCookie, 3000);
     }
 
   }
