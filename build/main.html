@@ -922,18 +922,18 @@
               </li>
 
               <li class="swiper-slide main-discounts__card">
-                <h3>С 99 сентября по 09 октября</h3>
-                <p>Действует <span>скидка 1500%</span> на все колбасы и мясные деликатесы. Мы Вам еще и доплатим!</p>
+                <h3>С 12 сентября по 03 октября</h3>
+                <p>Действует <span>скидка 15%</span> на все колбасы и мясные деликатесы. Ждем вас в гости за приятными покупками!</p>
               </li>
 
               <li class="swiper-slide main-discounts__card">
-                <h3>С 50 сентября по 03 октября</h3>
-                <p>Действует <span>скидка 1500%</span> на все колбасы и мясные деликатесы. Подходи, не скупись, покупай колбасу!</p>
+                <h3>С 12 сентября по 03 октября</h3>
+                <p>Действует <span>скидка 15%</span> на все колбасы и мясные деликатесы. Ждем вас в гости за приятными покупками!</p>
               </li>
 
               <li class="swiper-slide main-discounts__card">
-                <h3>С 33 марта по 03 октября</h3>
-                <p>Действует <span>скидка +1500%</span> на все колбасы и мясные деликатесы. Ждем вас в гости в нашем мясном раю!</p>
+                <h3>С 12 сентября по 03 октября</h3>
+                <p>Действует <span>скидка 15%</span> на все колбасы и мясные деликатесы. Ждем вас в гости за приятными покупками!</p>
               </li>
             </ul>
 
@@ -1227,89 +1227,8 @@
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> -->
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-
-  <script>
-    const timeline = gsap.timeline();
-    const button = document.querySelector('.button');
-    const body = document.querySelector('body');
-    const wrapper = document.querySelector('.main-animation__wrapper');
-
-    function removeLock() {
-          body.classList.remove('body-lock');
-        }
-
-    function addClass() {
-      wrapper.classList.add('main-animation__wrapper--active');
-    }
-
-    if (window.innerWidth >= 541) {
-
-      button.addEventListener('click', btnAnimation);
-
-      function btnAnimation() {
-
-        timeline
-          .to(".main-animation__first-plan path", {duration: 4, x: 60})
-          .to(".main-animation__second-plan path", {duration: 4, x: 370}, '-= 4')
-          .to(".main-animation__third-plan path", {duration: 4, x: 530, y: -20}, '-= 4')
-          .to(".main-animation__haze", {duration: 1, y: 100}, '-= 4')
-          .to(".main-animation__haze", {delay: 1, duration: 1, y: -30}, '-= 4')
-          .to(".main-animation__haze", {delay: 2, duration: 1, x: -50}, '-= 4')
-          .to(".main-animation__haze", {delay: 3, duration: 1, x: -50, y: -60}, '-= 4')
-          .to(".main-animation__cloud-left", {delay: 2, duration: 1, x: -50}, '-= 4')
-          .to(".main-animation__cloud-left", {delay: 3, duration: 1, x: -50, y: -40}, '-= 4')
-          .to(".main-animation__wrapper", {duration: 4, y: 90}, '-= 4')
-          .to(".main-animation__cloud-right", {delay: 2, duration: 2, x: 150}, '-= 4')
-          .to(".main-animation__haze-right", {duration: 1, scale: 2, x: -100, y: -50}, '-= 4')
-          .to(".main-animation__mountain", {duration: 1, y: 50}, '-= 4');
-
-
-
-        button.removeEventListener('click', btnAnimation);
-        window.removeEventListener('wheel', wheelAnimation);
-
-
-
-        setTimeout(removeLock, 4000);
-        setTimeout(addClass, 4000);
-
-      }
-
-      window.addEventListener('wheel', wheelAnimation);
-
-      function wheelAnimation() {
-
-        timeline
-          .to(".main-animation__first-plan path", {duration: 4, x: 60})
-          .to(".main-animation__second-plan path", {duration: 4, x: 370}, '-= 4')
-          .to(".main-animation__third-plan path", {duration: 4, x: 530, y: -20}, '-= 4')
-          .to(".main-animation__haze", {duration: 1, y: 100}, '-= 4')
-          .to(".main-animation__haze", {delay: 1, duration: 1, y: -30}, '-= 4')
-          .to(".main-animation__haze", {delay: 2, duration: 1, x: -50}, '-= 4')
-          .to(".main-animation__haze", {delay: 3, duration: 1, x: -50, y: -60}, '-= 4')
-          .to(".main-animation__cloud-left", {delay: 2, duration: 1, x: -50}, '-= 4')
-          .to(".main-animation__cloud-left", {delay: 3, duration: 1, x: -50, y: -40}, '-= 4')
-          .to(".main-animation__wrapper", {duration: 4, y: 90}, '-= 4')
-          .to(".main-animation__cloud-right", {delay: 2, duration: 2, x: 150}, '-= 4')
-          .to(".main-animation__haze-right", {duration: 1, scale: 2, x: -100, y: -50}, '-= 4')
-          .to(".main-animation__mountain", {duration: 1, y: 50}, '-= 4');
-
-        window.removeEventListener('wheel', wheelAnimation);
-        button.removeEventListener('click', btnAnimation);
-
-        setTimeout(removeLock, 4000);
-        setTimeout(addClass, 4000);
-
-      }
-    } else {
-      removeLock();
-    }
-
-  </script>
 
   <script>
     let center = [59.91796593897841,30.304908500000003];

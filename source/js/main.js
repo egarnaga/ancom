@@ -13,8 +13,10 @@ import {accordionFaq} from './modules/accordion-faq';
 import {discountsSlider} from './modules/discounts-slider';
 
 import {catalogDropdown} from './modules/catalog-dropdown';
+import {animationMain} from './modules/animation-main';
 
-//import {franchiseMap} from './modules/franchise-map';
+
+
 
 
 // Utils
@@ -37,4 +39,4 @@ certificationSlider();
 accordionFaq();
 discountsSlider();
 catalogDropdown();
-//franchiseMap();
+animationMain();
