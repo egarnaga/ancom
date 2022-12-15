@@ -1116,9 +1116,10 @@
 
 
       placemarkAncom = new ymaps.Placemark(ancom, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Москва / Московская область</p>
+          balloonContentHeader: '<div class="balloon-main-header">ООО «Анком»</div>',
+          balloonContentBody: `
+                            <div class="balloon-main-p">
+                              <p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p>
                             </div>
                           `
       }, {
