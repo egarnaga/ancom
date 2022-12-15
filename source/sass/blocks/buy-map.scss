@@ -1,3 +1,51 @@
+.buy-map {
+  position: relative;
+}
+
+.buy-map::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 50px;
+
+  width: 122px;
+  height: 129px;
+
+  background-image: url(../img/bg/twig-23.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+@media  screen and (max-width: 645px) {
+  .buy-map::before {
+    background-image: none;
+  }
+}
+
+.buy-map::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 187px;
+  height: 230px;
+
+  background-image: url(../img/bg/twig-25.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+@media  screen and (max-width: 645px) {
+  .buy-map::after {
+    background-image: none;
+  }
+}
+
 .buy-map__wrapper {
   position: relative;
 }
@@ -7,23 +55,47 @@
 
   position: absolute;
 
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 50px;
 
+  width: 154px;
+  height: 220px;
 
-
-  background-image: url(../img/bg/bg-buy-map.svg);
-  background-size: cover;
-  background-position: center center;
+  background-image: url(../img/bg/twig-22.svg);
   background-repeat: no-repeat;
   z-index: 6000;
 }
 
-@media  screen and (max-width: 540px) {
+@media  screen and (max-width: 645px) {
   .buy-map__wrapper::before {
     background-image: none;
   }
 }
+
+
+.buy-map__wrapper::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 450px;
+
+  width: 181px;
+  height: 149px;
+
+  background-image: url(../img/bg/twig-24.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+
+@media  screen and (max-width: 645px) {
+  .buy-map__wrapper::after {
+    background-image: none;
+  }
+}
+
 
 .buy-map__map {
   position: relative;
