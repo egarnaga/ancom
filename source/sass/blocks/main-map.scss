@@ -1,3 +1,29 @@
+.main-map {
+  position: relative;
+}
+
+.main-map::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 50px;
+
+  width: 122px;
+  height: 129px;
+
+  background-image: url(../img/bg/twig-23.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+@media  screen and (max-width: 645px) {
+  .main-map::before {
+    background-image: none;
+  }
+}
+
 .main-map__wrapper {
   position: relative;
 
@@ -8,26 +34,54 @@
 
   position: absolute;
 
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 50px;
 
-  background-image: url(../img/bg/bg-map-main.svg);
-  background-size: cover;
+  width: 154px;
+  height: 220px;
+
+  background-image: url(../img/bg/twig-22.svg);
   background-repeat: no-repeat;
   z-index: 1000;
 }
 
-@media  screen and (max-width: 540px) {
+@media  screen and (max-width: 645px) {
   .main-map__wrapper::before {
-    background-image: url(../img/bg/bg-map-main-mobile.svg);
-    background-size: contain;
+    left: 25px;
+
+    width: 77px;
+    height: 110px;
   }
 }
 
-@media  screen and (max-width: 375px) {
-  .main-map__wrapper::before {
+.main-map__wrapper::after {
+  content: "";
 
-    background-size: cover;
+  position: absolute;
+
+  bottom: 0;
+  left: 450px;
+
+  width: 181px;
+  height: 149px;
+
+  background-image: url(../img/bg/twig-24.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+@media  screen and (max-width: 810px) {
+  .main-map__wrapper::after {
+    left: 400px;
+
+    width: 90px;
+    height: 74px;
+  }
+}
+
+@media  screen and (max-width: 645px) {
+  .main-map__wrapper::after {
+    left: 25px;
   }
 }
 
