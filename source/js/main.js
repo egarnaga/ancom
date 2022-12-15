@@ -16,6 +16,7 @@ import {catalogDropdown} from './modules/catalog-dropdown';
 import {animationMain} from './modules/animation-main';
 import {btnClose} from './modules/cookie-close-btn';
 
+import {awardsTabs} from './modules/awards-tabs';
 
 
 
@@ -42,3 +43,4 @@ discountsSlider();
 catalogDropdown();
 animationMain();
 btnClose();
+awardsTabs();
