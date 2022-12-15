@@ -17,6 +17,7 @@ import {animationMain} from './modules/animation-main';
 import {btnClose} from './modules/cookie-close-btn';
 
 import {awardsTabs} from './modules/awards-tabs';
+import {tabs} from './modules/awards-tabs-mobile';
 
 
 
@@ -44,3 +45,4 @@ catalogDropdown();
 animationMain();
 btnClose();
 awardsTabs();
+tabs();
