@@ -169,11 +169,41 @@
   <script src="js/main.min.js"></script>
   <script>
     let center = [59.91796593897841,30.304908500000003];
+    let shop = [59.91131692603441,30.29121934362042];
 
     function init() {
       let map = new ymaps.Map('map-buy', {
         center: center,
         zoom: 10
+      });
+
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: black; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+
+      placemarkShop = new ymaps.Placemark(shop, {
+          balloonContentHeader: '<div class="balloon-buy-header">«Мясной магазин»</div>',
+          balloonContentBody: `
+                            <div class="balloon-buy-p">
+                              <p>Ул. Курляндская, дом 8, корп. 2</p>
+                            </div>
+                          `
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/svg/placemark-red.svg',
+          // Размеры метки.
+          iconImageSize: [40, 40],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -42],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
       });
 
       map.controls.remove('geolocationControl'); // удаляем геолокацию
@@ -184,6 +214,9 @@
       map.controls.remove('zoomControl'); // удаляем контрол зуммирования
       map.controls.remove('rulerControl'); // удаляем контрол правил
       map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+      map.geoObjects
+      .add(placemarkShop);
     }
 
     ymaps.ready(init);

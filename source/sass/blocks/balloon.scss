@@ -29,6 +29,39 @@
 }
 
 
+.buy-map [class*="balloon__content"] {
+  max-width: 283px;
+  padding-top: 20px;
+  padding-left: 29px;
+}
+
+.buy-map [class*="balloon-content__header"] {
+  margin-bottom: 0;
+}
+
+.balloon-buy-header {
+  font-family: "Avenir Next Cyr", "Arial", sans-serif;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1E1E1E;
+}
+
+.balloon-buy-p {
+  max-width: 225px;
+
+  font-family: "Avenir Next Cyr", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+  opacity: 0.7;
+}
+
+
+
+
 
 .balloon p {
   margin: 0;
