@@ -28,9 +28,9 @@ const animationMain = () => {
       function btnAnimation() {
 
         timeline
-          .to(".main-animation__first-plan path", {duration: 4, x: 60})
-          .to(".main-animation__second-plan path", {duration: 4, x: 370}, '-= 4')
-          .to(".main-animation__third-plan path", {duration: 4, x: 530, y: -20}, '-= 4')
+          .to(".main-animation__first-plan", {duration: 4, x: 60})
+          .to(".main-animation__second-plan-g", {duration: 4, x: 370}, '-= 4')
+          .to(".main-animation__third-plan-g", {duration: 4, x: 530, y: -20}, '-= 4')
           .to(".main-animation__haze", {duration: 1, y: 100}, '-= 4')
           .to(".main-animation__haze", {delay: 1, duration: 1, y: -30}, '-= 4')
           .to(".main-animation__haze", {delay: 2, duration: 1, x: -50}, '-= 4')
@@ -60,9 +60,9 @@ const animationMain = () => {
       function wheelAnimation() {
 
         timeline
-          .to(".main-animation__first-plan path", {duration: 4, x: 60})
-          .to(".main-animation__second-plan path", {duration: 4, x: 370}, '-= 4')
-          .to(".main-animation__third-plan path", {duration: 4, x: 530, y: -20}, '-= 4')
+          .to(".main-animation__first-plan", {duration: 4, x: 60})
+          .to(".main-animation__second-plan-g", {duration: 4, x: 370}, '-= 4')
+          .to(".main-animation__third-plan-g", {duration: 4, x: 530, y: -20}, '-= 4')
           .to(".main-animation__haze", {duration: 1, y: 100}, '-= 4')
           .to(".main-animation__haze", {delay: 1, duration: 1, y: -30}, '-= 4')
           .to(".main-animation__haze", {delay: 2, duration: 1, x: -50}, '-= 4')
