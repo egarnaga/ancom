@@ -191,6 +191,23 @@
   align-items: flex-start;
   max-width: 400px;
   flex-shrink: 0;
+
+  @media (min-width: 1441px) {
+    max-width: 100%;
+    width: 30%;
+  }
+}
+
+.franchise-opening__slider-card picture {
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
+}
+
+.franchise-opening__slider-card picture img {
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
 }
 
 @media  screen and (max-width: 540px) {
@@ -352,6 +369,19 @@
 
   text-overflow: ellipsis;
   overflow: hidden;
+
+  @media (min-width: 1441px) {
+    max-width: 100%;
+    flex: 1;
+  }
+}
+
+.franchise-opening__slider-shop-card img {
+  @media (min-width: 1441px) {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+  }
 }
 
 @media  screen and (max-width: 600px) {

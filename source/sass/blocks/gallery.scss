@@ -27,6 +27,11 @@
   height: 720px;
   max-height: 720px;
   margin-right: 2px;
+
+  @media (min-width: 1441px) {
+    width: 50%;
+    max-width: 100%;
+  }
 }
 
 @media  screen and (max-width: 695px) {
@@ -155,6 +160,11 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url(../img/bg/gallery-linear-1.png),
                       url(../img/bg/gallery-3@2x.jpg);
+  }
+
+  @media (min-width: 1441px) {
+    width: 50%;
+    max-width: 100%;
   }
 }
 

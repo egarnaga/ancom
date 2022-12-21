@@ -20,6 +20,20 @@
   width: 50%;
 }
 
+.manufacture__img picture {
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
+}
+
+.manufacture__img picture img {
+  @media (min-width: 1441px) {
+    width: 100%;
+    height: 850px;
+    object-fit: cover;
+  }
+}
+
 @media  screen and (max-width: 1240px) {
   .manufacture__img {
     object-fit: contain;

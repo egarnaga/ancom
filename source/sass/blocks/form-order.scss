@@ -106,6 +106,10 @@
   padding-bottom: 87px;
   padding-left: 119px;
   padding-right: 118px;
+
+  @media (min-width: 1441px) {
+    max-width: 100%;
+  }
 }
 
 @media  screen and (max-width: 610px) {

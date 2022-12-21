@@ -6,6 +6,11 @@
   background-position: bottom center;
   background-size: 100%;
   background-repeat: no-repeat;
+
+  @media (min-width: 1441px) {
+    background-size: 1500px;
+    background-position: bottom right;
+  }
 }
 
 @media  screen and (max-width: 540px) {
@@ -93,6 +98,11 @@
   padding-right: 27px;
 
   background-color: #FFFFFF;
+
+  @media (min-width: 1441px) {
+    flex: 1;
+    max-width: 100%;
+  }
 }
 
 @media  screen and (max-width: 1090px) {

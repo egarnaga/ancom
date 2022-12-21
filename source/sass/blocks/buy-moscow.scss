@@ -226,6 +226,9 @@
   margin-bottom: -19px;
 
   list-style: none;
+
+  column-count: 2;
+  column-gap: 6px;
 }
 
 @media  screen and (max-width: 540px) {
@@ -237,15 +240,14 @@
 
 .buy-moscow__wrapper ul li {
   position: relative;
-  margin-right: 19px;
   margin-bottom: 19px;
   padding-left: 30px;
 }
 
 @media  screen and (max-width: 540px) {
   .buy-moscow__wrapper ul li {
-    margin-right: 12px;
     margin-bottom: 12px;
+    padding-left: 24px;
   }
 }
 

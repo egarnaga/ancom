@@ -154,8 +154,16 @@
 
 .technologies__img picture {
   display: flex;
+
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
 }
 
 .technologies__img img {
   object-fit: cover;
+
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
 }

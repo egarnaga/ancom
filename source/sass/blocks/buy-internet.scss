@@ -89,7 +89,12 @@
 
 .buy-internet ul li {
   margin-right: 11px;
+  flex: 1;
   background-color: #265113;
+}
+
+.buy-internet ul li img {
+  margin: 0 auto;
 }
 
 

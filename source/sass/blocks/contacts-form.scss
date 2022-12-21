@@ -2,6 +2,12 @@
   display: flex;
 }
 
+.contacts-form.form-order {
+  @media (min-width: 1441px) {
+    background-position: top 20% center;
+  }
+}
+
 .contacts-form__img {
   width: 50%;
   background-image: url(../img/bg/landscape.svg);

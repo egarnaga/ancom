@@ -104,8 +104,13 @@
 
 .buy-russia ul li {
   margin-right: 11px;
+  flex: 1;
 
   background-color: #92D660;
+}
+
+.buy-russia ul li img {
+  margin: 0 auto;
 }
 
 @media  screen and (max-width: 400px) {

@@ -5,6 +5,18 @@
   background-image: url(../img/bg/bg-product-info.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
+
+  &__img {
+    @media (min-width: 1441px) {
+      width: 57%;
+    }
+
+    img {
+      @media (min-width: 1441px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media  screen and (max-width: 830px) {

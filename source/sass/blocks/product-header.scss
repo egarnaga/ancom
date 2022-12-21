@@ -8,6 +8,10 @@
   background-position: bottom right;
   background-size: 94%;
   background-repeat: no-repeat;
+
+  @media (min-width: 1441px) {
+    background-size: 1300px;
+  }
 }
 
 @media  screen and (max-width: 540px) {

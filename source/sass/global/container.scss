@@ -4,6 +4,10 @@
   margin: 0 auto;
   //padding: 0 40px;
 
+  @media (min-width: 1441px) {
+    max-width: 100%;
+  }
+
   @include viewport--lg {
     //padding: 0 32px;
   }

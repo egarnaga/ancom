@@ -45,6 +45,10 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: 1441px) {
+    max-width: 100%;
+  }
 }
 
 @media  screen and (max-width: 965px) {

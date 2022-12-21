@@ -164,6 +164,11 @@
   position: relative;
   width: 647px;
   min-width: 647px;
+
+  @media (min-width: 1441px) {
+    width: auto;
+    min-width: 45%;
+  }
 }
 
 @media  screen and (max-width: 1200px) {

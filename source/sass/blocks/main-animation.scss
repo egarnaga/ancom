@@ -4,6 +4,11 @@
 
   height: 854px;
   max-height: 854px;
+
+  @media (min-width: 1441px) {
+    max-height: unset;
+    height: 100vh;
+  }
 }
 
 @media  screen and (max-width: 1250px) {
