@@ -4641,6 +4641,18 @@ button,
     .about-company-header {
       background-image: url(../img/bg/bg-about-company@2x.png); } }
 
+@media screen and (min-width: 1490px) {
+  .about-company-header {
+    background-position: center 5px; } }
+
+@media screen and (min-width: 1700px) {
+  .about-company-header {
+    background-position: center -30px; } }
+
+@media screen and (min-width: 1850px) {
+  .about-company-header {
+    background-position: center -45px; } }
+
 @media screen and (max-width: 540px) {
   .about-company-header {
     -webkit-box-pack: center;
@@ -6972,16 +6984,13 @@ button,
 .main-animation__btn button:disabled:hover {
   border: 1.5px solid #E3D3D3; }
 
-@media screen and (min-width: 1510px) {
-  .main-discounts {
-    background-position: right; } }
-
 .main-discounts {
   position: relative;
   padding-top: 76px;
   background-color: #FFD885;
   background-image: url(../img/bg/bg-main-discounts@1x.png);
-  background-size: cover;
+  background-position: center right;
+  background-size: 100%;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px -36px 134px rgba(49, 36, 10, 0.26);
           box-shadow: 0px -36px 134px rgba(49, 36, 10, 0.26);
@@ -6990,9 +6999,22 @@ button,
     .main-discounts {
       background-image: url(../img/bg/bg-main-discounts@2x.png); } }
 
+@media screen and (max-width: 1335px) {
+  .main-discounts {
+    background-size: 90%; } }
+
+@media screen and (max-width: 1100px) {
+  .main-discounts {
+    background-size: 80%; } }
+
+@media screen and (max-width: 1000px) {
+  .main-discounts {
+    background-size: 70%; } }
+
 @media screen and (max-width: 540px) {
   .main-discounts {
     padding-top: 35px;
+    background-size: cover;
     background-image: url(../img/bg/bg-main-discounts-mobile@1x.png); } }
   @media screen and (max-width: 540px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 540px) and (min-resolution: 144dpi), screen and (max-width: 540px) and (min-resolution: 1.5dppx) {
     .main-discounts {
