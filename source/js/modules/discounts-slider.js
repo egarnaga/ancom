@@ -4,13 +4,16 @@ const discountsSlider = () => {
 
   if (slider) {
     let sliderDiscounts = new Swiper('.main-discounts__container', {
+
+      effect: 'fade',
+
       autoplay: {
         delay: 3000,
       },
 
       loop: true,
 
-      slidesPerView: 'auto',
+      //slidesPerView: 'auto',
 
       navigation: {
         nextEl: '.main-discounts__btn-next',

@@ -1,3 +1,10 @@
+@media  screen and (min-width: 1510px) {
+  .main-discounts {
+    background-position: right;
+  }
+}
+
+
 .main-discounts {
   position: relative;
   padding-top: 76px;
@@ -63,6 +70,14 @@
   max-height: 100%;
   flex-shrink: 0;
   padding-left: 52px;
+}
+
+.main-discounts .main-discounts__card {
+  opacity: 0 !important;
+}
+
+.main-discounts .swiper-slide-active {
+  opacity: 1 !important;
 }
 
 @media  screen and (max-width: 540px) {

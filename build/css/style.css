@@ -6972,6 +6972,10 @@ button,
 .main-animation__btn button:disabled:hover {
   border: 1.5px solid #E3D3D3; }
 
+@media screen and (min-width: 1510px) {
+  .main-discounts {
+    background-position: right; } }
+
 .main-discounts {
   position: relative;
   padding-top: 76px;
@@ -7034,6 +7038,12 @@ button,
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding-left: 52px; }
+
+.main-discounts .main-discounts__card {
+  opacity: 0 !important; }
+
+.main-discounts .swiper-slide-active {
+  opacity: 1 !important; }
 
 @media screen and (max-width: 540px) {
   .main-discounts__card {
