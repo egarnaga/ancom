@@ -29,6 +29,12 @@
 }
 
 
+.buy-map [class*="balloon_to_top"] {
+  top: -160px !important;
+}
+
+
+
 .buy-map [class*="balloon__content"] {
   max-width: 283px;
   padding-top: 20px;
