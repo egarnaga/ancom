@@ -1258,16 +1258,14 @@
   <script>
     let center = [59.91796593897841,30.304908500000003];
     let ancom = [59.89285206424189,30.436574499999967];
+    let ancom2 = [59.8076310643342,30.37972949999998];
+    let ancom3 = [59.90782556418691,30.513991500000003];
 
     function init() {
       let map = new ymaps.Map('map-main', {
         center: center,
         zoom: 10
       });
-
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: black; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
 
 
       placemarkAncom = new ymaps.Placemark(ancom, {
@@ -1290,9 +1288,63 @@
           iconImageOffset: [-5, -42],
           // Смещение слоя с содержимым относительно слоя с картинкой.
           iconContentOffset: [15, 15],
-          // Макет содержимого.
-          iconContentLayout: MyIconContentLayout,
-          //hideIconOnBalloonOpen: false
+          hideIconOnBalloonOpen: false
+      });
+
+      placemarkAncom2 = new ymaps.Placemark(ancom2, {
+          balloonContentHeader: '<div class="balloon-main-header">ООО «Анком»</div>',
+          balloonContentBody: `
+                            <div class="balloon-main-p">
+                              <p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p>
+                            </div>
+                          `
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-red.svg',
+          iconImageSize: [40, 40],
+          iconImageOffset: [-5, -42],
+          iconContentOffset: [15, 15],
+          hideIconOnBalloonOpen: false
+      });
+
+      placemarkAncom3 = new ymaps.Placemark(ancom3, {
+          balloonContentHeader: '<div class="balloon-main-header">ООО «Анком»</div>',
+          balloonContentBody: `
+                            <div class="balloon-main-p">
+                              <p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p>
+                            </div>
+                          `
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/placemark-red.svg',
+          iconImageSize: [40, 40],
+          iconImageOffset: [-5, -42],
+          iconContentOffset: [15, 15],
+          hideIconOnBalloonOpen: false
+      });
+
+      placemarkAncom.events
+      .add('click', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
+      })
+      .add('balloonclose', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
+      });
+
+      placemarkAncom2.events
+      .add('click', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
+      })
+      .add('balloonclose', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
+      });
+
+      placemarkAncom3.events
+      .add('click', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
+      })
+      .add('balloonclose', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
       });
 
       map.controls.remove('geolocationControl'); // удаляем геолокацию
@@ -1305,7 +1357,9 @@
       map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
       map.geoObjects
-      .add(placemarkAncom);
+      .add(placemarkAncom)
+      .add(placemarkAncom2)
+      .add(placemarkAncom3);
 
     }
 

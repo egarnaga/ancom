@@ -8,6 +8,11 @@
   margin-bottom: 0;
 }
 
+.main-map [class*="balloon_to_top"] {
+  top: -196px !important;
+}
+
+
 .balloon-main-header {
   font-family: "Avenir Next Cyr", "Arial", sans-serif;
 
