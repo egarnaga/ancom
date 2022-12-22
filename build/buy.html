@@ -346,8 +346,20 @@
           // Смещение слоя с содержимым относительно слоя с картинкой.
           iconContentOffset: [15, 15],
           // Макет содержимого.
-          iconContentLayout: MyIconContentLayout
+          iconContentLayout: MyIconContentLayout,
+          hideIconOnBalloonOpen: false
       });
+
+
+
+      placemarkShop.events
+      .add('click', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
+      })
+      .add('balloonclose', function (e) {
+        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
+      });
+
 
       map.controls.remove('geolocationControl'); // удаляем геолокацию
       map.controls.remove('searchControl'); // удаляем поиск

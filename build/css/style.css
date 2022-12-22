@@ -9219,6 +9219,10 @@ button,
   height: 490px;
   max-height: 490px; }
 
+@media screen and (min-width: 1920px) {
+  .catalog-main__card {
+    width: 25%; } }
+
 @media screen and (max-width: 1220px) {
   .catalog-main__card {
     height: 300px;
@@ -10139,6 +10143,10 @@ button,
 .product-catalog .catalog-main__card--2,
 .product-catalog .catalog-main__card--3 {
   display: none; }
+
+@media screen and (min-width: 1920px) {
+  .product-catalog .catalog-main__card--2 {
+    display: block; } }
 
 @media screen and (max-width: 880px) {
   .product-catalog .catalog-main__card--1,
