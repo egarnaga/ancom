@@ -10772,6 +10772,9 @@ button,
     padding-top: 17px !important;
     padding-left: 20px !important; } }
 
+.franchise-map [class*="balloon_to_top"] {
+  top: -97px !important; }
+
 .footer {
   padding-top: 112px;
   padding-bottom: 32px;

@@ -916,11 +916,6 @@
 
 
 
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: black; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-
       placemarkMoscow = new ymaps.Placemark(moscow, {
           balloonContent: `
                             <div class="balloon">
@@ -940,8 +935,7 @@
           iconImageOffset: [-5, -42],
           // Смещение слоя с содержимым относительно слоя с картинкой.
           iconContentOffset: [15, 15],
-          // Макет содержимого.
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkVladimir = new ymaps.Placemark(vladimir, {
@@ -956,7 +950,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-17, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkIvanovo = new ymaps.Placemark(ivanovo, {
@@ -971,7 +965,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-17, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkKaluga = new ymaps.Placemark(kaluga, {
@@ -986,7 +980,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-12, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkRyazan = new ymaps.Placemark(ryazan, {
@@ -1001,7 +995,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-14, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkTver = new ymaps.Placemark(tver, {
@@ -1016,7 +1010,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-14, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkTula = new ymaps.Placemark(tula, {
@@ -1031,7 +1025,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-15, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
       placemarkYaroslavl = new ymaps.Placemark(yaroslavl, {
@@ -1046,7 +1040,7 @@
           iconImageSize: [30, 30],
           iconImageOffset: [-14, -28],
           iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          hideIconOnBalloonOpen: false
       });
 
 
