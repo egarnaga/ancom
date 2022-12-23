@@ -312,98 +312,90 @@
   <script src="js/main.min.js"></script>
   <script>
     let center = [59.91796593897841,30.304908500000003];
-    let shop = [59.91131692603441,30.29121934362042];
-    let shop2 = [59.8076310643342,30.37972949999998];
-    let shop3 = [59.90782556418691,30.513991500000003];
+    /******* ДОБАВИТЬ НОВУЮ МЕТКУ ТУТ (places array features) *******/
+    const places = {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 0,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [59.91796593897841,30.304908500000003]
+          },
+          "properties": {
+            "balloonContentHeader": "<div class='balloon-main-header'>ООО «Анком»</div>",
+            "balloonContentBody": "<div class='balloon-main-p'><p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p></div>"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [59.89285206424189,30.436574499999967]
+          },
+          "properties": {
+            "balloonContentHeader": "<div class='balloon-main-header'>ООО «Анком»</div>",
+            "balloonContentBody": "<div class='balloon-main-p'><p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p></div>",
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 2,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [59.8076310643342,30.37972949999998]
+          },
+          "properties": {
+            "balloonContentHeader": "<div class='balloon-main-header'>ООО «Анком»</div>",
+            "balloonContentBody": "<div class='balloon-main-p'><p>192029, Санкт-Петербург, проспект Обуховской обороны, дом 119б</p></div>",
+          }
+        },
+      ]
+    };
 
+    ymaps.ready(init);
     function init() {
-      let map = new ymaps.Map('map-buy', {
-        center: center,
-        zoom: 10
+      var map = new ymaps.Map('map-buy', {
+          center: center,
+          zoom: 10
+        }),
+        objectManager = new ymaps.ObjectManager({
+          // Чтобы метки начали кластеризоваться, выставляем опцию.
+          clusterize: true,
+          // ObjectManager принимает те же опции, что и кластеризатор.
+          gridSize: 32,
+          clusterDisableClickZoom: true,
+        });
+
+      objectManager.objects.options.set({
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#imageWithContent',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/svg/placemark-red.svg',
+        // Размеры метки.
+        iconImageSize: [40, 40],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-18, 0],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        hideIconOnBalloonOpen: false
       });
 
-
-      placemarkShop = new ymaps.Placemark(shop, {
-          balloonContentHeader: '<div class="balloon-buy-header">«Мясной магазин»</div>',
-          balloonContentBody: `
-                            <div class="balloon-buy-p">
-                              <p>Ул. Курляндская, дом 8, корп. 2</p>
-                            </div>
-                          `
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          iconImageHref: 'img/svg/placemark-red.svg',
-          // Размеры метки.
-          iconImageSize: [40, 40],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -42],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkShop2 = new ymaps.Placemark(shop2, {
-          balloonContentHeader: '<div class="balloon-buy-header">«Мясной магазин»</div>',
-          balloonContentBody: `
-                            <div class="balloon-buy-p">
-                              <p>Ул. Курляндская, дом 8, корп. 2</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-red.svg',
-          iconImageSize: [40, 40],
-          iconImageOffset: [-5, -42],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkShop3 = new ymaps.Placemark(shop3, {
-          balloonContentHeader: '<div class="balloon-buy-header">«Мясной магазин»</div>',
-          balloonContentBody: `
-                            <div class="balloon-buy-p">
-                              <p>Ул. Курляндская, дом 8, корп. 2</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-red.svg',
-          iconImageSize: [40, 40],
-          iconImageOffset: [-5, -42],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-
-
-      placemarkShop.events
-      .add('click', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
-      })
-      .add('balloonclose', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
-      });
-
-      placemarkShop2.events
-      .add('click', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
-      })
-      .add('balloonclose', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
-      });
-
-      placemarkShop3.events
-      .add('click', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-black.svg'});
-      })
-      .add('balloonclose', function (e) {
-        e.get('target').options.set({iconImageHref: 'img/svg/placemark-red.svg'});
-      });
-
+      objectManager.events
+        .add(['click'], function (e) {
+          objectManager.objects.setObjectOptions(e.get('objectId'), {
+            iconImageHref: 'img/svg/placemark-black.svg'
+          });
+        })
+        .add(['balloonclose'], function (e) {
+          objectManager.objects.setObjectOptions(e.get('objectId'), {
+            iconImageHref: 'img/svg/placemark-red.svg'
+          });
+        });
 
       map.controls.remove('geolocationControl'); // удаляем геолокацию
       map.controls.remove('searchControl'); // удаляем поиск
@@ -414,13 +406,9 @@
       map.controls.remove('rulerControl'); // удаляем контрол правил
       map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
-      map.geoObjects
-      .add(placemarkShop)
-      .add(placemarkShop2)
-      .add(placemarkShop3);
+      map.geoObjects.add(objectManager);
+      objectManager.add(places);
     }
-
-    ymaps.ready(init);
   </script>
 
 </body>

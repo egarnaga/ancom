@@ -760,168 +760,165 @@
     let tula = [54.18117312324303,37.61855149999991];
     let yaroslavl = [57.65072373894173,39.86612299999997];
 
+    /******* ДОБАВИТЬ НОВУЮ МЕТКУ ТУТ (places array features) *******/
+    const places = {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 0,
+          "geometry": {
+            "type": "Point",
+            "coordinates": moscow
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Москва / Московская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-moscow.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Point",
+            "coordinates": ivanovo,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Иваново / Ивановская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-ivanovo.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 2,
+          "geometry": {
+            "type": "Point",
+            "coordinates": vladimir,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Владимир / Владимирская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-vladimir.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 3,
+          "geometry": {
+            "type": "Point",
+            "coordinates": kaluga,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Калуга / Калужская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-kaluga.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 4,
+          "geometry": {
+            "type": "Point",
+            "coordinates": ryazan,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Рязань / Рязанская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-ryazan.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 5,
+          "geometry": {
+            "type": "Point",
+            "coordinates": tver,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Тверь / Тверская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-tver.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 6,
+          "geometry": {
+            "type": "Point",
+            "coordinates": tula,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Тула / Тульская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-tula.svg',
+          }
+        },
+        {
+          "type": "Feature",
+          "id": 7,
+          "geometry": {
+            "type": "Point",
+            "coordinates": yaroslavl,
+          },
+          "properties": {
+            "balloonContent": "<div class='balloon'><p>Ярославль / Ярославская область</p></div>",
+          },
+          "options": {
+            "iconImageHref": 'img/svg/placemark-yaroslavl.svg',
+          }
+        },
+      ]
+    };
+
+    ymaps.ready(init);
     function init() {
-      let map = new ymaps.Map('map-test', {
-        center: center,
-        zoom: 6
+      var map = new ymaps.Map('map-test', {
+          center: center,
+          zoom: 6
+        }),
+        objectManager = new ymaps.ObjectManager({
+          // Чтобы метки начали кластеризоваться, выставляем опцию.
+          clusterize: true,
+          // ObjectManager принимает те же опции, что и кластеризатор.
+          gridSize: 32,
+          clusterDisableClickZoom: true,
+        });
+
+      objectManager.objects.options.set({
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#imageWithContent',
+        // Размеры метки.
+        iconImageSize: [30, 30],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-14, -20],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        hideIconOnBalloonOpen: false
       });
 
+      map.controls.remove('geolocationControl'); // удаляем геолокацию
+      map.controls.remove('searchControl'); // удаляем поиск
+      map.controls.remove('trafficControl'); // удаляем контроль трафика
+      map.controls.remove('typeSelector'); // удаляем тип
+      map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      map.controls.remove('rulerControl'); // удаляем контрол правил
+      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
-
-      placemarkMoscow = new ymaps.Placemark(moscow, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Москва / Московская область</p>
-                            </div>
-                          `
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          iconImageHref: 'img/svg/placemark-moscow.svg',
-          // Размеры метки.
-          iconImageSize: [30, 30],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -42],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkVladimir = new ymaps.Placemark(vladimir, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Владимир / Владимирская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-vladimir.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-17, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkIvanovo = new ymaps.Placemark(ivanovo, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Иваново / Ивановская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-ivanovo.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-17, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkKaluga = new ymaps.Placemark(kaluga, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Калуга / Калужская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-kaluga.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-12, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkRyazan = new ymaps.Placemark(ryazan, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Рязань / Рязанская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-ryazan.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-14, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkTver = new ymaps.Placemark(tver, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Тверь / Тверская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-tver.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-14, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkTula = new ymaps.Placemark(tula, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Тула / Тульская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-tula.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-15, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-      placemarkYaroslavl = new ymaps.Placemark(yaroslavl, {
-          balloonContent: `
-                            <div class="balloon">
-                              <p>Ярославль / Ярославская область</p>
-                            </div>
-                          `
-      }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'img/svg/placemark-yaroslavl.svg',
-          iconImageSize: [30, 30],
-          iconImageOffset: [-14, -28],
-          iconContentOffset: [15, 15],
-          hideIconOnBalloonOpen: false
-      });
-
-
-    map.controls.remove('geolocationControl'); // удаляем геолокацию
-    map.controls.remove('searchControl'); // удаляем поиск
-    map.controls.remove('trafficControl'); // удаляем контроль трафика
-    map.controls.remove('typeSelector'); // удаляем тип
-    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-    map.controls.remove('rulerControl'); // удаляем контрол правил
-    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-
-    map.geoObjects
-      .add(placemarkMoscow)
-      .add(placemarkVladimir)
-      .add(placemarkIvanovo)
-      .add(placemarkKaluga)
-      .add(placemarkRyazan)
-      .add(placemarkTver)
-      .add(placemarkTula)
-      .add(placemarkYaroslavl);
-
-}
-
-ymaps.ready(init);
-
-
+      map.geoObjects.add(objectManager);
+      objectManager.add(places);
+    }
   </script>
-
-
 </body>
 </html>

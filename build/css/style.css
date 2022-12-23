@@ -4638,26 +4638,35 @@ button,
   margin-top: 18px;
   padding-bottom: 392px;
   padding-right: 7.8%;
-  background-image: url(../img/bg/bg-about-company@1x.png);
-  background-position: bottom center;
-  background-size: 100%;
+  background-image: url(../img/bg/bg-about-company-left@1x.png), url(../img/bg/bg-about-company-right@1x.png);
+  background-position: bottom left, bottom right;
+  background-size: 1100px, 1080px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-company-header {
-      background-image: url(../img/bg/bg-about-company@2x.png); } }
+      background-image: url(../img/bg/bg-about-company-left@2x.png), url(../img/bg/bg-about-company-right@2x.png); } }
 
-@media screen and (min-width: 1490px) {
+@media screen and (max-width: 1360px) {
   .about-company-header {
-    background-position: center 5px; } }
+    background-size: 70%,76%; } }
 
-@media screen and (min-width: 1700px) {
+/*@media  screen and (min-width: 1490px) {
   .about-company-header {
-    background-position: center -30px; } }
+    background-position: center 5px;
+  }
+}
 
-@media screen and (min-width: 1850px) {
+@media  screen and (min-width: 1700px) {
   .about-company-header {
-    background-position: center -45px; } }
+    background-position: center -30px;
+  }
+}
 
+@media  screen and (min-width: 1850px) {
+  .about-company-header {
+    background-position: center -45px;
+  }
+}*/
 @media screen and (max-width: 540px) {
   .about-company-header {
     -webkit-box-pack: center;
@@ -4668,10 +4677,13 @@ button,
     padding-left: 15px;
     padding-right: 15px; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .about-company-header {
-    background-image: url(../img/bg/bg-about-company-mobile@1x.png); } }
-  @media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 375px) and (min-resolution: 144dpi), screen and (max-width: 375px) and (min-resolution: 1.5dppx) {
+    padding-bottom: 380px;
+    background-image: url(../img/bg/bg-about-company-mobile@1x.png);
+    background-size: cover;
+    background-position: bottom center; } }
+  @media screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 420px) and (min-resolution: 144dpi), screen and (max-width: 420px) and (min-resolution: 1.5dppx) {
     .about-company-header {
       background-image: url(../img/bg/bg-about-company-mobile@2x.png); } }
 
@@ -4741,6 +4753,7 @@ button,
   padding-right: 15px;
   background-color: #FFFFFF;
   background-image: url(../img/bg/bg-excellence.svg);
+  background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px -6px 134px rgba(54, 45, 12, 0.08);
