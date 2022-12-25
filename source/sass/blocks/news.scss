@@ -60,7 +60,7 @@
   background-repeat: no-repeat;
 
   position: sticky;
-  top: 0;
+  top: calc(100vh - 826px);
 }
 
 @media  screen and (max-width: 1250px) {
@@ -68,6 +68,8 @@
     padding-bottom: 324px;
     padding-left: 60px;
     padding-right: 60px;
+
+    top: calc(100vh - 704px);
   }
 }
 
@@ -75,6 +77,8 @@
   .news__aside ul {
     padding-left: 30px;
     padding-right: 30px;
+
+    top: calc(100vh - 644px);
   }
 }
 
