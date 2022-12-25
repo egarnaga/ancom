@@ -7017,6 +7017,10 @@ button,
     .main-discounts {
       background-image: url(../img/bg/bg-main-discounts@2x.png); } }
 
+@media screen and (min-width: 1440px) {
+  .main-discounts {
+    background-size: contain; } }
+
 @media screen and (max-width: 1335px) {
   .main-discounts {
     background-size: 90%; } }
@@ -7973,6 +7977,11 @@ button,
   @media (min-width: 1441px) {
     .buy-saint-petersburg {
       background-position: top center; } }
+
+@media screen and (min-width: 1440px) {
+  .buy-saint-petersburg {
+    background-size: contain;
+    background-position: center right; } }
 
 @media screen and (max-width: 1000px) {
   .buy-saint-petersburg {
