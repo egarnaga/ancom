@@ -8893,6 +8893,9 @@ button,
   .catalog-page::after {
     background-image: none; } }
 
+.catalog-page.wrapper {
+  overflow-x: clip; }
+
 .catalog-header {
   position: relative;
   background-image: url(../img/bg/bg-catalog-header.svg);
@@ -9167,7 +9170,9 @@ button,
   background-image: url(../img/bg/bg-catalog-main.svg);
   background-position: bottom center;
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: sticky;
+  top: calc(100vh - 980px); }
 
 .catalog-main__list li {
   display: -webkit-box;

@@ -14,9 +14,6 @@
   }
 }
 
-
-
-
 .catalog-page::before {
   content: "";
 
@@ -62,3 +59,6 @@
   }
 }
 
+.catalog-page.wrapper {
+  overflow-x: clip;
+}
