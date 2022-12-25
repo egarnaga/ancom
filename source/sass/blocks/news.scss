@@ -41,6 +41,8 @@
   }
 }
 
+
+
 .news__aside ul {
   margin: 0;
   padding: 0;
@@ -56,6 +58,9 @@
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+
+  position: sticky;
+  top: 0;
 }
 
 @media  screen and (max-width: 1250px) {
